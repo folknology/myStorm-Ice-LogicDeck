@@ -19667,7 +19667,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <attribute name="VALUE" x="-119.38" y="35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="-86.36" y="172.72" smashed="yes">
-<attribute name="VALUE" x="-88.9" y="170.18" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-91.44" y="170.18" size="1.778" layer="96"/>
 </instance>
 <instance part="C12" gate="G$1" x="-86.36" y="-22.86" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-87.884" y="-22.479" size="1.778" layer="95" rot="MR0"/>
@@ -20132,8 +20132,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <instance part="+3V19" gate="G$1" x="241.3" y="215.9" smashed="yes">
 <attribute name="VALUE" x="238.76" y="210.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V20" gate="G$1" x="-91.44" y="170.18" smashed="yes">
-<attribute name="VALUE" x="-93.98" y="165.1" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V20" gate="G$1" x="-93.98" y="170.18" smashed="yes">
+<attribute name="VALUE" x="-96.52" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V21" gate="G$1" x="0" y="208.28" smashed="yes">
 <attribute name="VALUE" x="-2.54" y="203.2" size="1.778" layer="96" rot="R90"/>
@@ -20741,7 +20741,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCCIO_2"/>
 <pinref part="+3V20" gate="G$1" pin="+3V3"/>
-<wire x1="-91.44" y1="167.64" x2="-88.9" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="167.64" x2="-88.9" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCCIO_1"/>
@@ -20952,8 +20952,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_79"/>
-<wire x1="-88.9" y1="142.24" x2="-91.44" y2="142.24" width="0.1524" layer="91"/>
-<label x="-91.44" y="142.24" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="142.24" x2="-93.98" y2="142.24" width="0.1524" layer="91"/>
+<label x="-93.98" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -21269,8 +21269,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_63"/>
-<wire x1="-88.9" y1="157.48" x2="-91.44" y2="157.48" width="0.1524" layer="91"/>
-<label x="-91.44" y="157.48" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="157.48" x2="-93.98" y2="157.48" width="0.1524" layer="91"/>
+<label x="-93.98" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ2" class="0">
@@ -21286,8 +21286,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_56"/>
-<wire x1="-88.9" y1="165.1" x2="-91.44" y2="165.1" width="0.1524" layer="91"/>
-<label x="-91.44" y="165.1" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="165.1" x2="-93.98" y2="165.1" width="0.1524" layer="91"/>
+<label x="-93.98" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ4" class="0">
@@ -21303,15 +21303,15 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_57"/>
-<wire x1="-88.9" y1="162.56" x2="-91.44" y2="162.56" width="0.1524" layer="91"/>
-<label x="-91.44" y="162.56" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="162.56" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
+<label x="-93.98" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ6" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_72"/>
-<wire x1="-88.9" y1="149.86" x2="-91.44" y2="149.86" width="0.1524" layer="91"/>
-<label x="-91.44" y="149.86" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="149.86" x2="-93.98" y2="149.86" width="0.1524" layer="91"/>
+<label x="-93.98" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-63.5" y1="109.22" x2="-66.04" y2="109.22" width="0.1524" layer="91"/>
@@ -21337,8 +21337,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_64"/>
-<wire x1="-88.9" y1="154.94" x2="-91.44" y2="154.94" width="0.1524" layer="91"/>
-<label x="-91.44" y="154.94" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="154.94" x2="-93.98" y2="154.94" width="0.1524" layer="91"/>
+<label x="-93.98" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQK" class="0">
@@ -21371,15 +21371,15 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_78"/>
-<wire x1="-88.9" y1="144.78" x2="-91.44" y2="144.78" width="0.1524" layer="91"/>
-<label x="-91.44" y="144.78" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="144.78" x2="-93.98" y2="144.78" width="0.1524" layer="91"/>
+<label x="-93.98" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ5" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_71"/>
-<wire x1="-88.9" y1="152.4" x2="-91.44" y2="152.4" width="0.1524" layer="91"/>
-<label x="-91.44" y="152.4" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="152.4" x2="-93.98" y2="152.4" width="0.1524" layer="91"/>
+<label x="-93.98" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-63.5" y1="106.68" x2="-66.04" y2="106.68" width="0.1524" layer="91"/>
@@ -21405,8 +21405,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_61"/>
-<wire x1="-88.9" y1="160.02" x2="-91.44" y2="160.02" width="0.1524" layer="91"/>
-<label x="-91.44" y="160.02" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="160.02" x2="-93.98" y2="160.02" width="0.1524" layer="91"/>
+<label x="-93.98" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DQ1" class="0">
@@ -21422,8 +21422,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_73"/>
-<wire x1="-88.9" y1="147.32" x2="-91.44" y2="147.32" width="0.1524" layer="91"/>
-<label x="-91.44" y="147.32" size="1.778" layer="95"/>
+<wire x1="-88.9" y1="147.32" x2="-93.98" y2="147.32" width="0.1524" layer="91"/>
+<label x="-93.98" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PRT" class="0">
