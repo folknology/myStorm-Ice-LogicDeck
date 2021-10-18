@@ -4915,7 +4915,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="OC_NEWARK" value="unknown" x="67.45" y="10.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="67.45" y="10.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="resistor" package="R0402" value="100R" x="57.9" y="96.4" rot="R90"/>
+<element name="R4" library="resistor" package="R0402" value="100R" x="57.95" y="96.15" rot="R270"/>
 <element name="RN5" library="resistor-dil" package="0603-ARV" value="5k" x="60.15" y="18.1" rot="MR0">
 <attribute name="OC_FARNELL" value="unknown" x="60.15" y="18.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="60.15" y="18.1" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -4979,7 +4979,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="61.15" y="50.4" extent="1-16" drill="0.2" shape="octagon"/>
 <via x="61.15" y="49.6" extent="1-16" drill="0.2" shape="octagon"/>
 <via x="60.35" y="49.6" extent="1-16" drill="0.2" shape="octagon"/>
-<via x="59.55" y="52.8" extent="1-16" drill="0.2" shape="octagon"/>
+<via x="60.35" y="51.2" extent="1-16" drill="0.2" shape="octagon"/>
 <polygon width="0.15" layer="16">
 <vertex x="0" y="100"/>
 <vertex x="121" y="100"/>
@@ -5086,6 +5086,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="IC4" pad="H5"/>
 <contactref element="JMP2" pad="3"/>
 <contactref element="CAM1" pad="24"/>
+<wire x1="67.488" y1="86.65" x2="67.488" y2="87.928" width="0.15" layer="1"/>
+<wire x1="67.488" y1="87.928" x2="68.09" y2="88.53" width="0.15" layer="1"/>
 <wire x1="85.925" y1="67.38" x2="118" y2="97" width="0" layer="19" extent="1-1"/>
 <wire x1="82.115" y1="67.38" x2="85.925" y2="67.38" width="0" layer="19" extent="1-1"/>
 <wire x1="78.9" y1="54.7" x2="82.115" y2="67.38" width="0" layer="19" extent="1-1"/>
@@ -5095,13 +5097,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="61.55" y1="50.8" x2="65.45" y2="53.95" width="0" layer="19" extent="1-16"/>
 <wire x1="61.15" y1="50.4" x2="61.55" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="60.75" y1="50.8" x2="61.15" y2="50.4" width="0" layer="19" extent="1-1"/>
+<wire x1="60.35" y1="51.2" x2="60.75" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="59.95" y1="50.8" x2="60.35" y2="51.2" width="0" layer="19" extent="1-1"/>
 <wire x1="61.55" y1="50" x2="61.15" y2="50.4" width="0" layer="19" extent="1-1"/>
 <wire x1="61.95" y1="50.2" x2="61.55" y2="50" width="0" layer="19" extent="1-16"/>
 <wire x1="61.95" y1="49.7" x2="61.55" y2="50" width="0" layer="19" extent="1-16"/>
 <wire x1="61.15" y1="49.6" x2="61.55" y2="50" width="0" layer="19" extent="1-1"/>
 <wire x1="61.55" y1="49.2" x2="61.15" y2="49.6" width="0" layer="19" extent="1-1"/>
 <wire x1="60.35" y1="50.4" x2="60.75" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="59.95" y1="50.8" x2="60.35" y2="50.4" width="0" layer="19" extent="1-1"/>
 <wire x1="59.95" y1="50" x2="60.35" y2="50.4" width="0" layer="19" extent="1-1"/>
 <wire x1="59.45" y1="50.15" x2="59.95" y2="50" width="0" layer="19" extent="1-16"/>
 <wire x1="59.45" y1="49.65" x2="59.45" y2="50.15" width="0" layer="19" extent="16-16"/>
@@ -5110,19 +5113,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="59.95" y1="49.2" x2="60.35" y2="49.6" width="0" layer="19" extent="1-1"/>
 <wire x1="60.75" y1="49.2" x2="61.15" y2="49.6" width="0" layer="19" extent="1-1"/>
 <wire x1="59.95" y1="48.4" x2="59.95" y2="49.2" width="0" layer="19" extent="1-1"/>
-<wire x1="59.75" y1="52.15" x2="59.95" y2="50.8" width="0" layer="19" extent="1-16"/>
-<wire x1="60.15" y1="52.15" x2="59.75" y2="52.15" width="0" layer="19" extent="16-16"/>
-<wire x1="59.55" y1="52.8" x2="59.75" y2="52.15" width="0" layer="19" extent="16-16"/>
+<wire x1="60.15" y1="52.15" x2="60.35" y2="51.2" width="0" layer="19" extent="16-16"/>
+<wire x1="59.75" y1="52.15" x2="60.15" y2="52.15" width="0" layer="19" extent="16-16"/>
 <wire x1="54.4" y1="45.6" x2="59.95" y2="48.4" width="0" layer="19" extent="1-16"/>
 <wire x1="54.4" y1="44.5" x2="54.4" y2="45.6" width="0" layer="19" extent="16-16"/>
 <wire x1="50.1" y1="43.15" x2="54.4" y2="44.5" width="0" layer="19" extent="16-16"/>
 <wire x1="67.15" y1="45.7" x2="61.95" y2="49.7" width="0" layer="19" extent="1-16"/>
 <wire x1="67.85" y1="45.7" x2="67.15" y2="45.7" width="0" layer="19" extent="1-1"/>
-<wire x1="53.05" y1="57.9" x2="59.55" y2="52.8" width="0" layer="19" extent="1-1"/>
-<wire x1="53.05" y1="64.1" x2="53.05" y2="57.9" width="0" layer="19" extent="1-1"/>
-<wire x1="56.05" y1="64.25" x2="53.05" y2="64.1" width="0" layer="19" extent="1-1"/>
-<wire x1="53.75" y1="68.15" x2="53.05" y2="64.1" width="0" layer="19" extent="1-1"/>
-<wire x1="52.1" y1="68.15" x2="53.75" y2="68.15" width="0" layer="19" extent="1-1"/>
 <wire x1="70.65" y1="37.85" x2="67.85" y2="45.7" width="0" layer="19" extent="1-1"/>
 <wire x1="75.655" y1="35.8" x2="70.65" y2="37.85" width="0" layer="19" extent="1-1"/>
 <wire x1="76.4" y1="29.3" x2="75.655" y2="35.8" width="0" layer="19" extent="1-1"/>
@@ -5167,6 +5164,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="51.55" y1="25.525" x2="47.8" y2="25.9" width="0" layer="19" extent="1-1"/>
 <wire x1="53.4" y1="35.5" x2="50.1" y2="43.15" width="0" layer="19" extent="1-1"/>
 <wire x1="57.05" y1="33.8" x2="53.4" y2="35.5" width="0" layer="19" extent="1-1"/>
+<wire x1="53.05" y1="57.9" x2="59.75" y2="52.15" width="0" layer="19" extent="1-16"/>
+<wire x1="53.05" y1="64.1" x2="53.05" y2="57.9" width="0" layer="19" extent="1-1"/>
+<wire x1="56.05" y1="64.25" x2="53.05" y2="64.1" width="0" layer="19" extent="1-1"/>
+<wire x1="53.75" y1="68.15" x2="53.05" y2="64.1" width="0" layer="19" extent="1-1"/>
+<wire x1="52.1" y1="68.15" x2="53.75" y2="68.15" width="0" layer="19" extent="1-1"/>
 <wire x1="40.9" y1="49.3" x2="50.1" y2="43.15" width="0" layer="19" extent="1-1"/>
 <wire x1="38.885" y1="32.62" x2="47.8" y2="25.9" width="0" layer="19" extent="1-1"/>
 <wire x1="35.075" y1="32.62" x2="38.885" y2="32.62" width="0" layer="19" extent="1-1"/>
@@ -5175,8 +5177,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="59.75" y1="86.5" x2="59.35" y2="84.55" width="0" layer="19" extent="1-16"/>
 <wire x1="56.65" y1="86.5" x2="59.75" y2="86.5" width="0" layer="19" extent="16-16"/>
 <wire x1="62.405" y1="88.43" x2="59.75" y2="86.5" width="0" layer="19" extent="1-16"/>
-<wire x1="67.2" y1="86.5" x2="62.405" y2="88.43" width="0" layer="19" extent="1-16"/>
-<wire x1="67.488" y1="86.65" x2="67.2" y2="86.5" width="0" layer="19" extent="1-16"/>
+<wire x1="67.488" y1="87.928" x2="62.405" y2="88.43" width="0" layer="19" extent="1-1"/>
+<wire x1="67.2" y1="86.5" x2="67.488" y2="86.65" width="0" layer="19" extent="1-16"/>
 <wire x1="66.35" y1="84.55" x2="67.2" y2="86.5" width="0" layer="19" extent="1-16"/>
 <wire x1="68.09" y1="91.07" x2="68.09" y2="88.53" width="0" layer="19" extent="1-1"/>
 <wire x1="66.25" y1="93.7" x2="68.09" y2="91.07" width="0" layer="19" extent="16-16"/>
@@ -5194,8 +5196,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="3" y1="97" x2="35.075" y2="82.62" width="0" layer="19" extent="1-1"/>
 <wire x1="3" y1="47" x2="35.075" y2="32.62" width="0" layer="19" extent="1-1"/>
 <wire x1="3" y1="53" x2="3" y2="47" width="0" layer="19" extent="1-1"/>
-<wire x1="67.488" y1="86.65" x2="67.488" y2="87.928" width="0.15" layer="1"/>
-<wire x1="67.488" y1="87.928" x2="68.09" y2="88.53" width="0.15" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="RN1" pad="5"/>
@@ -5270,9 +5270,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="IC4" pad="D6"/>
 <contactref element="IC4" pad="L11"/>
 <contactref element="JMP2" pad="1"/>
-<wire x1="57.9" y1="97.05" x2="59.82" y2="98.25" width="0" layer="19" extent="1-1"/>
-<wire x1="59.275" y1="95.4" x2="57.9" y2="97.05" width="0" layer="19" extent="1-1"/>
-<wire x1="57.25" y1="93.7" x2="59.275" y2="95.4" width="0" layer="19" extent="1-16"/>
+<wire x1="65.612" y1="86.65" x2="65.612" y2="88.468" width="0.15" layer="1"/>
+<wire x1="65.612" y1="88.468" x2="65.55" y2="88.53" width="0.15" layer="1"/>
+<wire x1="59.275" y1="95.4" x2="59.82" y2="98.25" width="0" layer="19" extent="1-1"/>
+<wire x1="57.95" y1="95.5" x2="59.275" y2="95.4" width="0" layer="19" extent="1-1"/>
+<wire x1="57.25" y1="93.7" x2="57.95" y2="95.5" width="0" layer="19" extent="1-16"/>
 <wire x1="56.75" y1="93.7" x2="57.25" y2="93.7" width="0" layer="19" extent="16-16"/>
 <wire x1="56.25" y1="93.7" x2="56.75" y2="93.7" width="0" layer="19" extent="16-16"/>
 <wire x1="62.405" y1="89.7" x2="59.275" y2="95.4" width="0" layer="19" extent="1-1"/>
@@ -5334,8 +5336,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="78.9" y1="55.65" x2="78.9" y2="53.75" width="0" layer="19" extent="1-1"/>
 <wire x1="80.4" y1="55.25" x2="78.9" y2="55.65" width="0" layer="19" extent="1-1"/>
 <wire x1="34.11" y1="4.51" x2="43.6" y2="18.7" width="0" layer="19" extent="1-1"/>
-<wire x1="65.612" y1="86.65" x2="65.612" y2="88.468" width="0.15" layer="1"/>
-<wire x1="65.612" y1="88.468" x2="65.55" y2="88.53" width="0.15" layer="1"/>
 </signal>
 <signal name="N$93">
 <contactref element="R9" pad="1"/>
@@ -5361,7 +5361,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="63.2" y1="44.3" x2="63.2" y2="43.95" width="0.15" layer="1"/>
 <contactref element="RN3" pad="7"/>
 <contactref element="QD6" pad="62"/>
-<wire x1="59.55" y1="39.5" x2="59.3" y2="38.85" width="0" layer="19" extent="1-16"/>
 <wire x1="59.3" y1="38.85" x2="59.3" y2="32.55" width="0.15" layer="15"/>
 <wire x1="59.3" y1="32.55" x2="56.25" y2="29" width="0.15" layer="15"/>
 <wire x1="56.25" y1="29" x2="56.25" y2="25.3" width="0.15" layer="15"/>
@@ -5437,19 +5436,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="76.25" y1="11.5" x2="74.95" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
-<contactref element="RN1" pad="3"/>
+<contactref element="RN1" pad="1"/>
 <contactref element="U$17" pad="G"/>
-<wire x1="60.15" y1="96.9" x2="61.38" y2="99.14" width="0" layer="19" extent="1-1"/>
+<wire x1="61.825" y1="96.9" x2="61.825" y2="97.625" width="0.15" layer="1"/>
+<wire x1="61.825" y1="97.625" x2="62.2" y2="98" width="0.15" layer="1"/>
+<wire x1="62.2" y1="98" x2="62.2" y2="98.32" width="0.15" layer="1"/>
+<wire x1="62.2" y1="98.32" x2="61.38" y2="99.14" width="0.15" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="RN1" pad="2"/>
+<contactref element="RN1" pad="3"/>
 <contactref element="U$17" pad="R"/>
-<wire x1="60.95" y1="96.9" x2="59.82" y2="99.15" width="0" layer="19" extent="1-1"/>
+<wire x1="60.15" y1="96.9" x2="60.15" y2="97.65" width="0.15" layer="1"/>
+<wire x1="60.15" y1="97.65" x2="60.55" y2="98.05" width="0.15" layer="1"/>
+<wire x1="60.55" y1="98.05" x2="60.55" y2="99" width="0.15" layer="1"/>
+<wire x1="60.55" y1="99" x2="60.4" y2="99.15" width="0.15" layer="1"/>
+<wire x1="60.4" y1="99.15" x2="59.82" y2="99.15" width="0.15" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="RN1" pad="1"/>
+<contactref element="RN1" pad="2"/>
 <contactref element="U$17" pad="B"/>
-<wire x1="61.38" y1="98.25" x2="61.825" y2="96.9" width="0" layer="19" extent="1-1"/>
+<wire x1="60.95" y1="96.9" x2="60.95" y2="97.82" width="0.15" layer="1"/>
+<wire x1="60.95" y1="97.82" x2="61.38" y2="98.25" width="0.15" layer="1"/>
 </signal>
 <signal name="!QSS">
 <contactref element="QD6" pad="92"/>
@@ -5467,9 +5474,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="65.35" y1="18.35" x2="65.35" y2="16.812" width="0.15" layer="1"/>
 </signal>
 <signal name="RX">
-<contactref element="IC4" pad="K11"/>
-<wire x1="64.75" y1="46.8" x2="67.65" y2="46.8" width="0.15" layer="1"/>
-<wire x1="67.65" y1="46.8" x2="68.04" y2="46.61" width="0.15" layer="15"/>
 <contactref element="RN3" pad="6"/>
 <contactref element="QD6" pad="68"/>
 <wire x1="55.612" y1="22.05" x2="63.45" y2="22.05" width="0.15" layer="1"/>
@@ -5483,8 +5487,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="54.4" y1="22.3" x2="54.4" y2="23.35" width="0.15" layer="1"/>
 <wire x1="54.4" y1="23.35" x2="53.9" y2="23.85" width="0.15" layer="1"/>
 <wire x1="53.9" y1="23.85" x2="53.05" y2="23.85" width="0.15" layer="1"/>
-<via x="67.65" y="46.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
-<wire x1="63.97" y1="35.25" x2="64.75" y2="46.8" width="0" layer="19" extent="1-15"/>
+<contactref element="IC4" pad="J11"/>
+<wire x1="64.75" y1="47.6" x2="67.05" y2="47.6" width="0.15" layer="1"/>
+<via x="67.05" y="47.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="67.05" y1="47.6" x2="67.05" y2="39.8" width="0.15" layer="15"/>
+<wire x1="67.05" y1="39.8" x2="64.85" y2="36.5" width="0.15" layer="15"/>
+<wire x1="63.97" y1="35.25" x2="64.85" y2="36.5" width="0" layer="19" extent="15-15"/>
 </signal>
 <signal name="TX">
 <contactref element="RN3" pad="5"/>
@@ -6039,7 +6047,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="63.15" y1="44.9" x2="63.65" y2="44.15" width="0.15" layer="1"/>
 <wire x1="63.65" y1="44.15" x2="63.65" y2="43.3" width="0.15" layer="1"/>
 <contactref element="QD6" pad="61"/>
-<wire x1="59.85" y1="39.35" x2="59.65" y2="38.7" width="0" layer="19" extent="1-16"/>
 <wire x1="59.65" y1="38.7" x2="59.65" y2="32.35" width="0.15" layer="15"/>
 <wire x1="59.65" y1="32.35" x2="56.6" y2="28.85" width="0.15" layer="15"/>
 <wire x1="56.6" y1="28.85" x2="56.6" y2="25.7" width="0.15" layer="15"/>
@@ -6053,311 +6060,333 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="63.65" y="43.3" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
 <wire x1="63.65" y1="43.3" x2="63.65" y2="41.95" width="0.15" layer="15"/>
 <wire x1="63.65" y1="41.95" x2="59.65" y2="38.7" width="0.15" layer="15"/>
-<wire x1="57.75" y1="93.7" x2="63.85" y2="84.55" width="0" layer="19" extent="1-16"/>
+<wire x1="57.75" y1="93.7" x2="57.75" y2="92.15" width="0.15" layer="16"/>
+<wire x1="57.75" y1="92.15" x2="63.85" y2="85.75" width="0.15" layer="16"/>
+<wire x1="63.85" y1="85.75" x2="63.85" y2="85.6" width="0.15" layer="16"/>
+<via x="63.85" y="85.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.85" y1="85.6" x2="63.85" y2="84.55" width="0.15" layer="1"/>
 <wire x1="63.15" y1="46" x2="63.85" y2="84.55" width="0" layer="19" extent="1-1"/>
 <wire x1="45.3" y1="33.95" x2="56.6" y2="28.85" width="0" layer="19" extent="1-15"/>
 <wire x1="45.3" y1="42.15" x2="45.3" y2="33.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TF10">
 <contactref element="U$30" pad="P$13"/>
-<contactref element="IC4" pad="C9"/>
-<wire x1="63.15" y1="52.4" x2="63.15" y2="52.35" width="0.15" layer="1"/>
-<wire x1="63.15" y1="52.35" x2="63.55" y2="52.8" width="0.15" layer="1"/>
-<via x="63.55" y="52.8" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="82.115" y1="75" x2="75.95" y2="75" width="0.15" layer="1"/>
-<wire x1="75.95" y1="75" x2="64.05" y2="63.1" width="0.15" layer="1"/>
-<via x="64.05" y="63.1" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="64.05" y1="63.1" x2="64.05" y2="53.3" width="0.15" layer="16"/>
-<wire x1="64.05" y1="53.3" x2="63.55" y2="52.8" width="0.15" layer="16"/>
+<contactref element="IC4" pad="E10"/>
+<wire x1="63.95" y1="50.8" x2="64.3" y2="51.2" width="0.15" layer="1"/>
+<wire x1="64.3" y1="51.2" x2="68" y2="51.2" width="0.15" layer="1"/>
+<wire x1="68" y1="51.2" x2="68.2" y2="51.45" width="0.15" layer="1"/>
+<wire x1="68.2" y1="51.45" x2="68.2" y2="63.95" width="0.15" layer="1"/>
+<wire x1="68.2" y1="63.95" x2="78.9" y2="75" width="0.15" layer="1"/>
+<wire x1="78.9" y1="75" x2="82.115" y2="75" width="0.15" layer="1"/>
 </signal>
 <signal name="TF9">
 <contactref element="U$30" pad="P$37"/>
-<contactref element="IC4" pad="A10"/>
-<wire x1="63.95" y1="54" x2="63.95" y2="62.35" width="0.15" layer="1"/>
-<wire x1="63.95" y1="62.35" x2="76" y2="74.4" width="0.15" layer="1"/>
-<wire x1="76" y1="74.4" x2="83.6" y2="74.4" width="0.15" layer="1"/>
-<wire x1="83.6" y1="74.4" x2="84.3" y2="73.7" width="0.15" layer="1"/>
-<wire x1="84.3" y1="73.7" x2="85.895" y2="73.7" width="0.15" layer="1"/>
+<contactref element="IC4" pad="E9"/>
+<wire x1="63.15" y1="50.8" x2="63.55" y2="50.4" width="0.15" layer="1"/>
+<via x="63.55" y="50.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.55" y1="50.4" x2="68.3" y2="50.4" width="0.15" layer="16"/>
+<wire x1="68.3" y1="50.4" x2="68.55" y2="51.3" width="0.15" layer="1"/>
+<wire x1="68.55" y1="51.3" x2="68.55" y2="63.65" width="0.15" layer="1"/>
+<wire x1="68.55" y1="63.65" x2="78.7" y2="74" width="0.15" layer="1"/>
+<wire x1="78.7" y1="74" x2="79.05" y2="74.35" width="0.15" layer="1"/>
+<wire x1="79.05" y1="74.35" x2="83.85" y2="74.35" width="0.15" layer="1"/>
+<wire x1="83.85" y1="74.35" x2="84.35" y2="73.7" width="0.15" layer="1"/>
+<wire x1="86.4" y1="73.7" x2="86.5" y2="73.6" width="0.15" layer="1"/>
+<wire x1="84.35" y1="73.7" x2="85.895" y2="73.7" width="0.15" layer="1"/>
 <wire x1="85.895" y1="73.7" x2="85.925" y2="73.73" width="0.15" layer="1"/>
+<via x="68.3" y="50.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="85.925" y1="73.73" x2="86.4" y2="73.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TF8">
 <contactref element="U$30" pad="P$12"/>
-<contactref element="IC4" pad="A11"/>
-<wire x1="82.115" y1="73.73" x2="76.53" y2="73.73" width="0.15" layer="1"/>
-<wire x1="76.53" y1="73.73" x2="64.8" y2="62" width="0.15" layer="1"/>
-<wire x1="64.8" y1="62" x2="64.8" y2="54.05" width="0.15" layer="1"/>
-<wire x1="64.8" y1="54.05" x2="64.75" y2="54" width="0.15" layer="1"/>
+<via x="62.75" y="52" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="68.95" y1="50.4" x2="68.95" y2="63.45" width="0.15" layer="1"/>
+<wire x1="68.95" y1="63.45" x2="78.95" y2="73.5" width="0.15" layer="1"/>
+<wire x1="78.95" y1="73.5" x2="79.18" y2="73.73" width="0.15" layer="1"/>
+<wire x1="79.18" y1="73.73" x2="82.115" y2="73.73" width="0.15" layer="1"/>
+<via x="68.95" y="50.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<contactref element="IC4" pad="F11"/>
+<wire x1="64.75" y1="50" x2="66.55" y2="50" width="0.15" layer="1"/>
+<via x="66.55" y="50" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="66.55" y1="50" x2="68.55" y2="50" width="0.15" layer="16"/>
+<wire x1="68.55" y1="50" x2="68.95" y2="50.4" width="0.15" layer="16"/>
+<wire x1="64.75" y1="50" x2="62.75" y2="52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TF7">
 <contactref element="U$30" pad="P$36"/>
-<contactref element="IC4" pad="B11"/>
-<wire x1="85.925" y1="72.46" x2="84.49" y2="72.46" width="0.15" layer="1"/>
-<wire x1="84.49" y1="72.46" x2="83.7" y2="73.1" width="0.15" layer="1"/>
-<wire x1="83.7" y1="73.1" x2="76.8" y2="73.1" width="0.15" layer="1"/>
-<wire x1="76.8" y1="73.1" x2="65.55" y2="61.9" width="0.15" layer="1"/>
-<wire x1="65.55" y1="61.9" x2="65.55" y2="54" width="0.15" layer="1"/>
-<wire x1="65.55" y1="54" x2="64.75" y2="53.2" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A3"/>
+<wire x1="58.35" y1="54" x2="58.35" y2="56.7" width="0.15" layer="1"/>
+<via x="58.35" y="56.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="58.35" y1="56.7" x2="74.85" y2="73.1" width="0.15" layer="16"/>
+<wire x1="74.85" y1="73.1" x2="80.55" y2="73.1" width="0.15" layer="16"/>
+<via x="80.55" y="73.1" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.55" y1="73.1" x2="83.7" y2="73.1" width="0.15" layer="1"/>
+<wire x1="83.7" y1="73.1" x2="84.35" y2="72.45" width="0.15" layer="1"/>
+<wire x1="84.35" y1="72.45" x2="85.915" y2="72.45" width="0.15" layer="1"/>
+<wire x1="85.915" y1="72.45" x2="85.925" y2="72.46" width="0.15" layer="1"/>
 </signal>
 <signal name="TF6">
 <contactref element="U$30" pad="P$11"/>
-<contactref element="IC4" pad="C11"/>
-<wire x1="64.75" y1="52.4" x2="65.3" y2="52.4" width="0.15" layer="1"/>
-<wire x1="82.115" y1="72.46" x2="76.96" y2="72.46" width="0.15" layer="1"/>
-<wire x1="76.96" y1="72.46" x2="66.2" y2="61.7" width="0.15" layer="1"/>
-<wire x1="66.2" y1="61.7" x2="66.2" y2="53.3" width="0.15" layer="1"/>
-<wire x1="66.2" y1="53.3" x2="65.3" y2="52.4" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A2"/>
+<wire x1="57.55" y1="54" x2="57.55" y2="55.2" width="0.15" layer="1"/>
+<via x="57.55" y="55.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="57.55" y1="55.2" x2="74.95" y2="72.4" width="0.15" layer="16"/>
+<wire x1="74.95" y1="72.4" x2="80.7" y2="72.45" width="0.15" layer="16"/>
+<via x="80.7" y="72.45" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.7" y1="72.45" x2="80.71" y2="72.46" width="0.15" layer="1"/>
+<wire x1="80.71" y1="72.46" x2="82.115" y2="72.46" width="0.15" layer="1"/>
 </signal>
 <signal name="TF5">
 <contactref element="U$30" pad="P$35"/>
-<contactref element="IC4" pad="D10"/>
-<wire x1="85.925" y1="71.19" x2="84.41" y2="71.19" width="0.15" layer="1"/>
-<wire x1="84.41" y1="71.19" x2="83.75" y2="71.85" width="0.15" layer="1"/>
-<wire x1="83.75" y1="71.85" x2="77.2" y2="71.85" width="0.15" layer="1"/>
-<wire x1="77.2" y1="71.85" x2="66.6" y2="61.25" width="0.15" layer="1"/>
-<wire x1="66.6" y1="61.25" x2="66.6" y2="53.25" width="0.15" layer="1"/>
-<wire x1="63.95" y1="51.6" x2="64.35" y2="52" width="0.15" layer="1"/>
-<wire x1="64.35" y1="52" x2="65.35" y2="52" width="0.15" layer="1"/>
-<wire x1="65.35" y1="52" x2="66.6" y2="53.25" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A5"/>
+<wire x1="59.95" y1="54" x2="59.95" y2="56.65" width="0.15" layer="1"/>
+<via x="59.95" y="56.65" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="59.95" y1="56.65" x2="61.35" y2="56.65" width="0.15" layer="16"/>
+<wire x1="61.35" y1="56.65" x2="76.2" y2="71.85" width="0.15" layer="16"/>
+<wire x1="76.2" y1="71.85" x2="80.65" y2="71.85" width="0.15" layer="16"/>
+<wire x1="80.65" y1="71.85" x2="83.6" y2="71.85" width="0.15" layer="1"/>
+<wire x1="83.6" y1="71.85" x2="83.65" y2="71.8" width="0.15" layer="16"/>
+<wire x1="83.65" y1="71.8" x2="84.35" y2="71.2" width="0.15" layer="1"/>
+<wire x1="84.35" y1="71.2" x2="85.935" y2="71.2" width="0.15" layer="1"/>
+<wire x1="85.935" y1="71.2" x2="85.925" y2="71.19" width="0.15" layer="1"/>
+<via x="83.65" y="71.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<via x="80.65" y="71.85" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<via x="83.6" y="71.85" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
 </signal>
 <signal name="TF4">
 <contactref element="U$30" pad="P$10"/>
-<contactref element="IC4" pad="D11"/>
-<wire x1="82.115" y1="71.19" x2="77.24" y2="71.19" width="0.15" layer="1"/>
-<wire x1="77.24" y1="71.19" x2="67.1" y2="61.05" width="0.15" layer="1"/>
-<wire x1="67.1" y1="61.05" x2="67.1" y2="53.05" width="0.15" layer="1"/>
-<wire x1="67.1" y1="53.05" x2="65.65" y2="51.6" width="0.15" layer="1"/>
-<wire x1="65.65" y1="51.6" x2="64.75" y2="51.6" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A6"/>
+<wire x1="60.75" y1="54" x2="60.75" y2="55.55" width="0.15" layer="1"/>
+<via x="60.75" y="55.55" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="60.75" y1="55.55" x2="60.8" y2="55.55" width="0.15" layer="16"/>
+<wire x1="60.8" y1="55.55" x2="76.45" y2="71.2" width="0.15" layer="16"/>
+<wire x1="76.45" y1="71.2" x2="80.65" y2="71.2" width="0.15" layer="16"/>
+<via x="80.65" y="71.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.65" y1="71.2" x2="82.105" y2="71.2" width="0.15" layer="1"/>
+<wire x1="82.105" y1="71.2" x2="82.115" y2="71.19" width="0.15" layer="1"/>
 </signal>
 <signal name="TF3">
 <contactref element="U$30" pad="P$34"/>
-<wire x1="85.925" y1="69.92" x2="84.68" y2="69.92" width="0.15" layer="1"/>
-<wire x1="84.68" y1="69.92" x2="84" y2="70.6" width="0.15" layer="1"/>
-<wire x1="84" y1="70.6" x2="77.45" y2="70.6" width="0.15" layer="1"/>
-<wire x1="77.45" y1="70.6" x2="67.65" y2="60.8" width="0.15" layer="1"/>
-<wire x1="67.65" y1="60.8" x2="67.65" y2="52.85" width="0.15" layer="1"/>
-<wire x1="67.65" y1="52.85" x2="65.95" y2="51.2" width="0.15" layer="1"/>
-<contactref element="IC4" pad="E9"/>
-<wire x1="63.15" y1="50.8" x2="63.55" y2="51.2" width="0.15" layer="1"/>
-<wire x1="63.55" y1="51.2" x2="65.95" y2="51.2" width="0.15" layer="1"/>
+<contactref element="IC4" pad="C7"/>
+<wire x1="61.55" y1="52.4" x2="61.95" y2="52.8" width="0.15" layer="1"/>
+<via x="61.95" y="52.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="61.95" y1="52.8" x2="61.95" y2="56.2" width="0.15" layer="16"/>
+<wire x1="61.95" y1="56.2" x2="76.25" y2="70.5" width="0.15" layer="16"/>
+<wire x1="76.25" y1="70.5" x2="83.6" y2="70.5" width="0.15" layer="16"/>
+<wire x1="83.6" y1="70.5" x2="84.2" y2="69.9" width="0.15" layer="16"/>
+<wire x1="84.2" y1="69.9" x2="87.15" y2="69.9" width="0.15" layer="16"/>
+<via x="87.15" y="69.9" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="87.15" y1="69.9" x2="87.13" y2="69.92" width="0.15" layer="1"/>
+<wire x1="87.13" y1="69.92" x2="85.925" y2="69.92" width="0.15" layer="1"/>
 </signal>
 <signal name="TF2">
 <contactref element="U$30" pad="P$9"/>
-<contactref element="IC4" pad="D9"/>
-<wire x1="63.15" y1="51.6" x2="63.55" y2="52" width="0.15" layer="1"/>
-<via x="63.55" y="52" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="63.55" y1="52" x2="67.6" y2="52" width="0.15" layer="16"/>
-<wire x1="82.115" y1="69.92" x2="77.62" y2="69.92" width="0.15" layer="1"/>
-<wire x1="77.62" y1="69.92" x2="68.3" y2="60.6" width="0.15" layer="1"/>
-<wire x1="68.3" y1="60.6" x2="68.3" y2="52.7" width="0.15" layer="1"/>
-<wire x1="68.3" y1="52.7" x2="67.6" y2="52" width="0.15" layer="1"/>
-<via x="67.6" y="52" extent="1-16" drill="0.2" shape="octagon"/>
+<contactref element="IC4" pad="A8"/>
+<wire x1="62.35" y1="54" x2="62.35" y2="55.7" width="0.15" layer="1"/>
+<via x="62.35" y="55.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.35" y1="55.7" x2="62.35" y2="56" width="0.15" layer="16"/>
+<wire x1="62.35" y1="56" x2="76.25" y2="69.9" width="0.15" layer="16"/>
+<wire x1="76.25" y1="69.9" x2="80.6" y2="69.9" width="0.15" layer="16"/>
+<wire x1="80.6" y1="69.9" x2="80.65" y2="69.95" width="0.15" layer="16"/>
+<via x="80.65" y="69.95" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.65" y1="69.95" x2="82.085" y2="69.95" width="0.15" layer="1"/>
+<wire x1="82.085" y1="69.95" x2="82.115" y2="69.92" width="0.15" layer="1"/>
 </signal>
 <signal name="TF1">
 <contactref element="U$30" pad="P$33"/>
-<contactref element="IC4" pad="E8"/>
-<wire x1="62.35" y1="50.8" x2="62.75" y2="51.2" width="0.15" layer="1"/>
-<via x="62.75" y="51.2" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="85.925" y1="68.65" x2="84.65" y2="68.65" width="0.15" layer="1"/>
-<wire x1="84.65" y1="68.65" x2="84.05" y2="69.25" width="0.15" layer="1"/>
-<wire x1="84.05" y1="69.25" x2="77.65" y2="69.25" width="0.15" layer="1"/>
-<wire x1="77.65" y1="69.25" x2="68.75" y2="60.35" width="0.15" layer="1"/>
-<wire x1="68.75" y1="60.35" x2="68.75" y2="52.4" width="0.15" layer="1"/>
-<wire x1="68.75" y1="52.4" x2="68.325" y2="51.925" width="0.15" layer="1"/>
-<wire x1="62.75" y1="51.2" x2="67.6" y2="51.2" width="0.15" layer="16"/>
-<wire x1="67.6" y1="51.2" x2="68.325" y2="51.925" width="0.15" layer="1"/>
-<via x="67.6" y="51.2" extent="1-16" drill="0.2" shape="octagon"/>
+<contactref element="IC4" pad="C8"/>
+<wire x1="62.35" y1="52.4" x2="62.75" y2="52.8" width="0.15" layer="1"/>
+<via x="62.75" y="52.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.75" y1="52.8" x2="62.75" y2="55.8" width="0.15" layer="16"/>
+<wire x1="62.75" y1="55.8" x2="76.15" y2="69.2" width="0.15" layer="16"/>
+<wire x1="76.15" y1="69.2" x2="83.75" y2="69.2" width="0.15" layer="16"/>
+<wire x1="83.75" y1="69.2" x2="84.3" y2="68.65" width="0.15" layer="16"/>
+<wire x1="84.3" y1="68.65" x2="87.15" y2="68.65" width="0.15" layer="16"/>
+<via x="87.15" y="68.65" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="87.15" y1="68.65" x2="85.925" y2="68.65" width="0.15" layer="1"/>
 </signal>
 <signal name="TF0">
 <contactref element="U$30" pad="P$8"/>
-<wire x1="82.115" y1="68.65" x2="77.8" y2="68.65" width="0.15" layer="1"/>
-<wire x1="77.8" y1="68.65" x2="69.25" y2="60.1" width="0.15" layer="1"/>
-<wire x1="69.25" y1="60.1" x2="69.25" y2="51.85" width="0.15" layer="1"/>
-<wire x1="69.25" y1="51.85" x2="68.2" y2="50.8" width="0.15" layer="1"/>
-<contactref element="IC4" pad="E11"/>
-<wire x1="64.75" y1="50.8" x2="68.2" y2="50.8" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A9"/>
+<wire x1="63.15" y1="54" x2="63.15" y2="55.7" width="0.15" layer="1"/>
+<via x="63.15" y="55.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.15" y1="55.7" x2="76.1" y2="68.65" width="0.15" layer="16"/>
+<wire x1="76.1" y1="68.65" x2="80.6" y2="68.65" width="0.15" layer="16"/>
+<via x="80.6" y="68.65" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.6" y1="68.65" x2="82.115" y2="68.65" width="0.15" layer="1"/>
 </signal>
 <signal name="TG11">
 <contactref element="U$13" pad="P$38"/>
-<contactref element="IC4" pad="E10"/>
-<wire x1="63.95" y1="50.8" x2="64.35" y2="50.4" width="0.15" layer="1"/>
-<wire x1="64.35" y1="50.4" x2="68.85" y2="50.4" width="0.15" layer="1"/>
-<wire x1="68.85" y1="50.4" x2="70.9" y2="47.05" width="0.15" layer="1"/>
-<wire x1="70.9" y1="47.05" x2="77.2" y2="47.05" width="0.15" layer="1"/>
-<wire x1="77.2" y1="47.05" x2="80.75" y2="42.5" width="0.15" layer="1"/>
-<wire x1="80.75" y1="42.5" x2="80.75" y2="25.95" width="0.15" layer="1"/>
-<wire x1="80.75" y1="25.95" x2="81.05" y2="25.65" width="0.15" layer="1"/>
-<wire x1="81.05" y1="25.65" x2="83.85" y2="25.65" width="0.15" layer="1"/>
-<wire x1="83.85" y1="25.65" x2="84.55" y2="24.95" width="0.15" layer="1"/>
-<wire x1="84.55" y1="24.95" x2="85.875" y2="24.95" width="0.15" layer="1"/>
-<wire x1="85.875" y1="24.95" x2="85.925" y2="25" width="0.15" layer="1"/>
+<contactref element="IC4" pad="F9"/>
+<wire x1="63.15" y1="50" x2="63.55" y2="49.6" width="0.15" layer="1"/>
+<via x="63.55" y="49.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.55" y1="49.6" x2="67.2" y2="49.6" width="0.15" layer="16"/>
+<wire x1="67.2" y1="49.6" x2="79.15" y2="43.15" width="0.15" layer="16"/>
+<wire x1="79.15" y1="43.15" x2="79.15" y2="26.35" width="0.15" layer="16"/>
+<wire x1="79.15" y1="26.35" x2="80.45" y2="25.05" width="0.15" layer="16"/>
+<wire x1="80.45" y1="25.05" x2="83.6" y2="25.05" width="0.15" layer="16"/>
+<via x="83.6" y="25.05" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="83.6" y1="25.05" x2="85.875" y2="25.05" width="0.15" layer="1"/>
+<wire x1="85.875" y1="25.05" x2="85.925" y2="25" width="0.15" layer="1"/>
 </signal>
 <signal name="TF11">
 <contactref element="U$30" pad="P$38"/>
-<contactref element="IC4" pad="B9"/>
-<wire x1="63.15" y1="53.2" x2="63.55" y2="53.6" width="0.15" layer="1"/>
-<wire x1="63.55" y1="53.6" x2="63.55" y2="63.25" width="0.15" layer="1"/>
-<wire x1="63.55" y1="63.25" x2="75.95" y2="75.65" width="0.15" layer="1"/>
-<wire x1="75.95" y1="75.65" x2="83.8" y2="75.65" width="0.15" layer="1"/>
-<wire x1="83.8" y1="75.65" x2="84.45" y2="74.95" width="0.15" layer="1"/>
-<wire x1="84.45" y1="74.95" x2="85.875" y2="74.95" width="0.15" layer="1"/>
-<wire x1="85.875" y1="74.95" x2="85.925" y2="75" width="0.15" layer="1"/>
+<wire x1="67.85" y1="52" x2="67.85" y2="64.15" width="0.15" layer="1"/>
+<wire x1="67.85" y1="64.15" x2="78.75" y2="75.65" width="0.15" layer="1"/>
+<wire x1="78.75" y1="75.65" x2="84.3" y2="75.65" width="0.15" layer="1"/>
+<wire x1="84.3" y1="75.65" x2="86.075" y2="74.95" width="0.15" layer="1"/>
+<wire x1="86.075" y1="74.95" x2="85.925" y2="75" width="0.15" layer="1"/>
+<contactref element="IC4" pad="E8"/>
+<wire x1="62.35" y1="50.8" x2="62.75" y2="51.2" width="0.15" layer="1"/>
+<via x="62.75" y="51.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.75" y1="51.2" x2="63.15" y2="51.6" width="0.15" layer="16"/>
+<wire x1="63.15" y1="51.6" x2="67.45" y2="51.6" width="0.15" layer="16"/>
+<wire x1="67.45" y1="51.6" x2="67.85" y2="52" width="0.15" layer="16"/>
+<via x="67.85" y="52" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
 </signal>
 <signal name="TG8">
 <contactref element="U$13" pad="P$12"/>
 <wire x1="82.145" y1="23.7" x2="82.115" y2="23.73" width="0.15" layer="1"/>
-<contactref element="IC4" pad="F10"/>
-<wire x1="63.95" y1="50" x2="64.35" y2="49.6" width="0.15" layer="1"/>
-<wire x1="64.35" y1="49.6" x2="68.6" y2="49.6" width="0.15" layer="1"/>
-<wire x1="68.6" y1="49.6" x2="70.65" y2="46.25" width="0.15" layer="1"/>
-<wire x1="70.65" y1="46.25" x2="76.55" y2="46.25" width="0.15" layer="1"/>
-<wire x1="76.55" y1="46.25" x2="79.9" y2="41.9" width="0.15" layer="1"/>
-<wire x1="79.9" y1="41.9" x2="79.9" y2="24.55" width="0.15" layer="1"/>
-<wire x1="79.9" y1="24.55" x2="80.7" y2="23.75" width="0.15" layer="1"/>
-<wire x1="80.7" y1="23.75" x2="82.095" y2="23.75" width="0.15" layer="1"/>
+<contactref element="IC4" pad="G9"/>
+<wire x1="63.15" y1="49.2" x2="63.55" y2="48.8" width="0.15" layer="1"/>
+<wire x1="63.55" y1="48.8" x2="67.55" y2="48.8" width="0.15" layer="1"/>
+<wire x1="67.55" y1="48.8" x2="78.65" y2="42.8" width="0.15" layer="1"/>
+<wire x1="78.65" y1="42.8" x2="78.65" y2="25.3" width="0.15" layer="1"/>
+<wire x1="78.65" y1="25.3" x2="80.2" y2="23.75" width="0.15" layer="1"/>
+<wire x1="80.2" y1="23.75" x2="82.095" y2="23.75" width="0.15" layer="1"/>
 <wire x1="82.095" y1="23.75" x2="82.115" y2="23.73" width="0.15" layer="1"/>
 </signal>
 <signal name="TG7">
 <contactref element="U$13" pad="P$36"/>
-<contactref element="IC4" pad="G11"/>
-<wire x1="64.75" y1="49.2" x2="68.45" y2="49.2" width="0.15" layer="1"/>
-<wire x1="68.45" y1="49.2" x2="70.4" y2="45.95" width="0.15" layer="1"/>
-<wire x1="70.4" y1="45.95" x2="76.2" y2="45.95" width="0.15" layer="1"/>
-<wire x1="76.2" y1="45.95" x2="79.5" y2="41.75" width="0.15" layer="1"/>
-<wire x1="79.5" y1="41.75" x2="79.5" y2="24.25" width="0.15" layer="1"/>
 <wire x1="85.865" y1="22.4" x2="85.925" y2="22.46" width="0.15" layer="1"/>
-<wire x1="79.5" y1="24.25" x2="80.6" y2="23.15" width="0.15" layer="1"/>
-<wire x1="80.6" y1="23.15" x2="83.75" y2="23.15" width="0.15" layer="1"/>
-<wire x1="83.75" y1="23.15" x2="84.45" y2="22.45" width="0.15" layer="1"/>
-<wire x1="84.45" y1="22.45" x2="85.915" y2="22.45" width="0.15" layer="1"/>
-<wire x1="85.915" y1="22.45" x2="85.925" y2="22.46" width="0.15" layer="1"/>
+<contactref element="IC4" pad="E11"/>
+<wire x1="64.75" y1="50.8" x2="66.8" y2="50.8" width="0.15" layer="1"/>
+<wire x1="66.8" y1="50.8" x2="80.05" y2="43.5" width="0.15" layer="1"/>
+<wire x1="80.05" y1="43.5" x2="80.05" y2="26.35" width="0.15" layer="1"/>
+<wire x1="80.05" y1="26.35" x2="80.65" y2="25.7" width="0.15" layer="1"/>
+<wire x1="80.65" y1="25.7" x2="87" y2="25.7" width="0.15" layer="1"/>
+<wire x1="87" y1="25.7" x2="87.45" y2="25.25" width="0.15" layer="1"/>
+<wire x1="87.45" y1="25.25" x2="87.45" y2="22.75" width="0.15" layer="1"/>
+<wire x1="87.45" y1="22.75" x2="87.15" y2="22.45" width="0.15" layer="1"/>
+<wire x1="87.15" y1="22.45" x2="85.935" y2="22.45" width="0.15" layer="1"/>
+<wire x1="85.935" y1="22.45" x2="85.925" y2="22.46" width="0.15" layer="1"/>
 </signal>
 <signal name="TG6">
 <contactref element="U$13" pad="P$11"/>
-<contactref element="IC4" pad="G9"/>
-<wire x1="63.15" y1="49.2" x2="63.2" y2="49.2" width="0.15" layer="1"/>
-<wire x1="63.2" y1="49.2" x2="63.6" y2="49.6" width="0.15" layer="1"/>
-<via x="63.6" y="49.6" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="63.6" y1="49.6" x2="68.25" y2="49.6" width="0.15" layer="16"/>
-<wire x1="68.25" y1="49.6" x2="70.45" y2="46.1" width="0.15" layer="16"/>
-<wire x1="70.45" y1="46.1" x2="78.45" y2="46.1" width="0.15" layer="16"/>
-<wire x1="78.45" y1="46.1" x2="81.3" y2="42.55" width="0.15" layer="16"/>
-<wire x1="81.3" y1="42.55" x2="81.3" y2="23.05" width="0.15" layer="16"/>
-<wire x1="81.3" y1="23.05" x2="80.7" y2="22.45" width="0.15" layer="16"/>
-<via x="80.7" y="22.45" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="80.7" y1="22.45" x2="82.105" y2="22.45" width="0.15" layer="1"/>
-<wire x1="82.105" y1="22.45" x2="82.115" y2="22.46" width="0.15" layer="1"/>
+<contactref element="IC4" pad="D9"/>
+<wire x1="63.15" y1="51.6" x2="63.55" y2="51.2" width="0.15" layer="1"/>
+<via x="63.55" y="51.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.55" y1="51.2" x2="67.95" y2="51.2" width="0.15" layer="16"/>
+<wire x1="67.95" y1="51.2" x2="69.5" y2="50.65" width="0.15" layer="16"/>
+<wire x1="69.5" y1="50.65" x2="69.5" y2="49.15" width="0.15" layer="16"/>
+<wire x1="69.5" y1="49.15" x2="79.8" y2="43.45" width="0.15" layer="16"/>
+<wire x1="79.8" y1="43.45" x2="79.8" y2="26.3" width="0.15" layer="16"/>
+<wire x1="79.8" y1="26.3" x2="81.3" y2="25.55" width="0.15" layer="16"/>
+<wire x1="81.3" y1="25.55" x2="83.8" y2="25.55" width="0.15" layer="16"/>
+<wire x1="83.8" y1="25.55" x2="84.1" y2="25.2" width="0.15" layer="16"/>
+<wire x1="84.1" y1="25.2" x2="84.1" y2="23.3" width="0.15" layer="16"/>
+<wire x1="84.1" y1="23.3" x2="83.8" y2="22.4" width="0.15" layer="16"/>
+<wire x1="83.8" y1="22.4" x2="83.35" y2="22.4" width="0.15" layer="16"/>
+<via x="83.35" y="22.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="83.35" y1="22.4" x2="83.29" y2="22.46" width="0.15" layer="1"/>
+<wire x1="83.29" y1="22.46" x2="82.115" y2="22.46" width="0.15" layer="1"/>
 </signal>
 <signal name="TG5">
 <contactref element="U$13" pad="P$35"/>
 <contactref element="IC4" pad="G10"/>
-<wire x1="63.95" y1="49.2" x2="64.35" y2="48.8" width="0.15" layer="1"/>
-<wire x1="64.35" y1="48.8" x2="68.35" y2="48.8" width="0.15" layer="1"/>
-<wire x1="68.35" y1="48.8" x2="70.15" y2="45.7" width="0.15" layer="1"/>
-<wire x1="70.15" y1="45.7" x2="75.9" y2="45.7" width="0.15" layer="1"/>
-<wire x1="75.9" y1="45.7" x2="79.1" y2="41.5" width="0.15" layer="1"/>
 <wire x1="85.885" y1="21.15" x2="85.925" y2="21.19" width="0.15" layer="1"/>
-<wire x1="79.1" y1="23.1" x2="80.35" y2="21.85" width="0.15" layer="1"/>
-<wire x1="80.35" y1="21.85" x2="83.8" y2="21.85" width="0.15" layer="1"/>
-<wire x1="83.8" y1="21.85" x2="84.45" y2="21.2" width="0.15" layer="1"/>
-<wire x1="84.45" y1="21.2" x2="85.915" y2="21.2" width="0.15" layer="1"/>
-<wire x1="85.915" y1="21.2" x2="85.925" y2="21.19" width="0.15" layer="1"/>
-<wire x1="79.1" y1="41.5" x2="79.1" y2="23.1" width="0.15" layer="1"/>
+<wire x1="63.95" y1="49.2" x2="64.35" y2="49.6" width="0.15" layer="1"/>
+<wire x1="64.35" y1="49.6" x2="67.45" y2="49.6" width="0.15" layer="1"/>
+<wire x1="67.45" y1="49.6" x2="79.35" y2="43.25" width="0.15" layer="1"/>
+<wire x1="79.35" y1="43.25" x2="79.35" y2="25.8" width="0.15" layer="1"/>
+<wire x1="79.35" y1="25.8" x2="80.35" y2="24.75" width="0.15" layer="1"/>
+<via x="80.35" y="24.75" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="80.35" y1="24.75" x2="83.95" y2="21.15" width="0.15" layer="16"/>
+<wire x1="83.95" y1="21.15" x2="84.55" y2="21.15" width="0.15" layer="16"/>
+<via x="84.55" y="21.15" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="84.55" y1="21.15" x2="84.59" y2="21.19" width="0.15" layer="1"/>
+<wire x1="84.59" y1="21.19" x2="85.925" y2="21.19" width="0.15" layer="1"/>
 </signal>
 <signal name="TG4">
 <contactref element="U$13" pad="P$10"/>
 <contactref element="IC4" pad="H11"/>
-<wire x1="64.75" y1="48.4" x2="68.3" y2="48.4" width="0.15" layer="1"/>
-<wire x1="68.3" y1="48.4" x2="70" y2="45.4" width="0.15" layer="1"/>
-<wire x1="70" y1="45.4" x2="75.6" y2="45.4" width="0.15" layer="1"/>
-<wire x1="75.6" y1="45.4" x2="78.7" y2="41.25" width="0.15" layer="1"/>
-<wire x1="78.7" y1="22.8" x2="80.3" y2="21.2" width="0.15" layer="1"/>
-<wire x1="80.3" y1="21.2" x2="82.105" y2="21.2" width="0.15" layer="1"/>
+<wire x1="64.75" y1="48.4" x2="67.6" y2="48.4" width="0.15" layer="1"/>
+<wire x1="67.6" y1="48.4" x2="78.35" y2="42.6" width="0.15" layer="1"/>
+<wire x1="78.35" y1="42.6" x2="78.35" y2="23.45" width="0.15" layer="1"/>
+<wire x1="78.35" y1="23.45" x2="80.6" y2="21.2" width="0.15" layer="1"/>
+<wire x1="80.6" y1="21.2" x2="82.105" y2="21.2" width="0.15" layer="1"/>
 <wire x1="82.105" y1="21.2" x2="82.115" y2="21.19" width="0.15" layer="1"/>
-<wire x1="78.7" y1="41.25" x2="78.7" y2="22.8" width="0.15" layer="1"/>
 </signal>
 <signal name="TG3">
 <contactref element="U$13" pad="P$34"/>
 <contactref element="IC4" pad="G8"/>
-<wire x1="62.35" y1="49.2" x2="62.75" y2="49.55" width="0.15" layer="1"/>
-<wire x1="62.75" y1="49.55" x2="62.75" y2="49.6" width="0.15" layer="1"/>
-<via x="62.75" y="49.6" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="62.75" y1="49.6" x2="63.2" y2="50" width="0.15" layer="16"/>
-<wire x1="63.2" y1="50" x2="68.5" y2="50" width="0.15" layer="16"/>
-<wire x1="68.5" y1="50" x2="70.75" y2="46.45" width="0.15" layer="16"/>
-<wire x1="70.75" y1="46.45" x2="78.85" y2="46.45" width="0.15" layer="16"/>
-<wire x1="78.85" y1="46.45" x2="81.85" y2="42.85" width="0.15" layer="16"/>
-<wire x1="81.85" y1="42.85" x2="81.8" y2="27" width="0.15" layer="16"/>
-<wire x1="81.8" y1="27" x2="81.8" y2="22.35" width="0.15" layer="16"/>
-<wire x1="81.8" y1="22.35" x2="84.25" y2="19.9" width="0.15" layer="16"/>
-<via x="84.25" y="19.9" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="84.25" y1="19.9" x2="85.905" y2="19.9" width="0.15" layer="1"/>
+<wire x1="62.35" y1="49.2" x2="62.75" y2="48.8" width="0.15" layer="1"/>
+<via x="62.75" y="48.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.75" y1="48.8" x2="67.25" y2="48.8" width="0.15" layer="16"/>
+<wire x1="67.25" y1="48.8" x2="78.35" y2="42.8" width="0.15" layer="16"/>
+<wire x1="78.35" y1="42.8" x2="78.35" y2="26.1" width="0.15" layer="16"/>
+<wire x1="78.35" y1="26.1" x2="84.55" y2="19.9" width="0.15" layer="16"/>
+<via x="84.55" y="19.9" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="84.55" y1="19.9" x2="85.905" y2="19.9" width="0.15" layer="1"/>
 <wire x1="85.905" y1="19.9" x2="85.925" y2="19.92" width="0.15" layer="1"/>
 </signal>
 <signal name="TG2">
 <contactref element="U$13" pad="P$9"/>
 <wire x1="82.045" y1="19.85" x2="82.115" y2="19.92" width="0.15" layer="1"/>
-<contactref element="IC4" pad="H10"/>
-<wire x1="63.95" y1="48.4" x2="64.35" y2="48" width="0.15" layer="1"/>
-<wire x1="64.35" y1="48" x2="68.2" y2="48" width="0.15" layer="1"/>
-<wire x1="68.2" y1="48" x2="69.8" y2="45.1" width="0.15" layer="1"/>
-<wire x1="69.8" y1="45.1" x2="75.35" y2="45.1" width="0.15" layer="1"/>
-<wire x1="75.35" y1="45.1" x2="78.25" y2="41" width="0.15" layer="1"/>
-<wire x1="78.25" y1="22.15" x2="80.45" y2="19.95" width="0.15" layer="1"/>
-<wire x1="80.45" y1="19.95" x2="82.085" y2="19.95" width="0.15" layer="1"/>
-<wire x1="82.085" y1="19.95" x2="82.115" y2="19.92" width="0.15" layer="1"/>
-<wire x1="78.25" y1="41" x2="78.25" y2="22.15" width="0.15" layer="1"/>
+<contactref element="IC4" pad="J10"/>
+<wire x1="63.95" y1="47.6" x2="63.95" y2="47.5" width="0.15" layer="1"/>
+<wire x1="63.95" y1="47.5" x2="64.25" y2="47.2" width="0.15" layer="1"/>
+<wire x1="64.25" y1="47.2" x2="67.85" y2="47.2" width="0.15" layer="1"/>
+<wire x1="67.85" y1="47.2" x2="77.6" y2="42.35" width="0.15" layer="1"/>
+<wire x1="77.6" y1="42.35" x2="77.7" y2="22.7" width="0.15" layer="1"/>
+<wire x1="77.7" y1="22.7" x2="80.5" y2="19.9" width="0.15" layer="1"/>
+<wire x1="80.5" y1="19.9" x2="82.095" y2="19.9" width="0.15" layer="1"/>
+<wire x1="82.095" y1="19.9" x2="82.115" y2="19.92" width="0.15" layer="1"/>
 </signal>
 <signal name="TG0">
 <contactref element="U$13" pad="P$8"/>
-<contactref element="IC4" pad="J10"/>
-<wire x1="63.95" y1="47.6" x2="64.35" y2="47.2" width="0.15" layer="1"/>
-<wire x1="64.35" y1="47.2" x2="67.95" y2="47.2" width="0.15" layer="1"/>
-<wire x1="67.95" y1="47.2" x2="69.55" y2="44.3" width="0.15" layer="1"/>
-<wire x1="69.55" y1="44.3" x2="75" y2="44.3" width="0.15" layer="1"/>
-<wire x1="75" y1="44.3" x2="77.35" y2="40.65" width="0.15" layer="1"/>
-<wire x1="77.35" y1="21.35" x2="80.05" y2="18.65" width="0.15" layer="1"/>
-<wire x1="80.05" y1="18.65" x2="82.115" y2="18.65" width="0.15" layer="1"/>
-<wire x1="77.35" y1="40.65" x2="77.35" y2="21.35" width="0.15" layer="1"/>
+<contactref element="IC4" pad="K11"/>
+<wire x1="64.75" y1="46.8" x2="67.85" y2="46.8" width="0.15" layer="1"/>
+<wire x1="67.85" y1="46.8" x2="77.25" y2="42.1" width="0.15" layer="1"/>
+<wire x1="77.25" y1="42.1" x2="77.25" y2="21.85" width="0.15" layer="1"/>
+<wire x1="77.25" y1="21.85" x2="80.45" y2="18.65" width="0.15" layer="1"/>
+<wire x1="80.45" y1="18.65" x2="82.115" y2="18.65" width="0.15" layer="1"/>
 </signal>
 <signal name="TG1">
 <contactref element="U$13" pad="P$33"/>
-<contactref element="IC4" pad="J11"/>
-<wire x1="64.75" y1="47.6" x2="68.1" y2="47.6" width="0.15" layer="1"/>
-<wire x1="68.1" y1="47.6" x2="69.7" y2="44.7" width="0.15" layer="1"/>
-<wire x1="69.7" y1="44.7" x2="75.1" y2="44.7" width="0.15" layer="1"/>
-<wire x1="75.1" y1="44.7" x2="77.8" y2="40.75" width="0.15" layer="1"/>
-<wire x1="85.825" y1="18.55" x2="85.925" y2="18.65" width="0.15" layer="1"/>
-<wire x1="77.8" y1="21.85" x2="80.3" y2="19.35" width="0.15" layer="1"/>
-<wire x1="80.3" y1="19.35" x2="83.45" y2="19.35" width="0.15" layer="1"/>
-<wire x1="83.45" y1="19.35" x2="84.15" y2="18.65" width="0.15" layer="1"/>
-<wire x1="84.15" y1="18.65" x2="85.925" y2="18.65" width="0.15" layer="1"/>
-<wire x1="77.8" y1="40.75" x2="77.8" y2="21.85" width="0.15" layer="1"/>
+<contactref element="IC4" pad="H10"/>
+<wire x1="63.95" y1="48.4" x2="64.35" y2="48" width="0.15" layer="1"/>
+<wire x1="64.35" y1="48" x2="67.55" y2="48" width="0.15" layer="1"/>
+<wire x1="67.55" y1="48" x2="78.05" y2="42.45" width="0.15" layer="1"/>
+<wire x1="78.05" y1="42.45" x2="78.05" y2="23.2" width="0.15" layer="1"/>
+<wire x1="78.05" y1="23.2" x2="80.6" y2="20.65" width="0.15" layer="1"/>
+<wire x1="80.6" y1="20.65" x2="83.55" y2="20.65" width="0.15" layer="1"/>
+<wire x1="83.55" y1="20.65" x2="84.05" y2="20.15" width="0.15" layer="1"/>
+<wire x1="84.05" y1="20.15" x2="84.05" y2="19.1" width="0.15" layer="1"/>
+<wire x1="84.05" y1="19.1" x2="84.55" y2="18.6" width="0.15" layer="1"/>
+<wire x1="84.55" y1="18.6" x2="85.875" y2="18.6" width="0.15" layer="1"/>
+<wire x1="85.875" y1="18.6" x2="85.925" y2="18.65" width="0.15" layer="1"/>
 </signal>
 <signal name="TG10">
 <contactref element="U$13" pad="P$13"/>
-<contactref element="IC4" pad="F11"/>
-<wire x1="64.75" y1="50" x2="68.8" y2="50" width="0.15" layer="1"/>
-<wire x1="68.8" y1="50" x2="70.85" y2="46.65" width="0.15" layer="1"/>
-<wire x1="70.85" y1="46.65" x2="76.85" y2="46.65" width="0.15" layer="1"/>
-<wire x1="76.85" y1="46.65" x2="80.35" y2="42.25" width="0.15" layer="1"/>
-<wire x1="80.35" y1="42.25" x2="80.35" y2="25.4" width="0.15" layer="1"/>
-<wire x1="80.35" y1="25.4" x2="80.7" y2="25.05" width="0.15" layer="1"/>
-<wire x1="80.7" y1="25.05" x2="82.065" y2="25.05" width="0.15" layer="1"/>
-<wire x1="82.065" y1="25.05" x2="82.115" y2="25" width="0.15" layer="1"/>
+<contactref element="IC4" pad="F10"/>
+<wire x1="63.95" y1="50" x2="64.35" y2="50.4" width="0.15" layer="1"/>
+<wire x1="64.35" y1="50.4" x2="66.8" y2="50.4" width="0.15" layer="1"/>
+<wire x1="66.8" y1="50.4" x2="79.65" y2="43.4" width="0.15" layer="1"/>
+<wire x1="79.65" y1="43.4" x2="79.7" y2="26.05" width="0.15" layer="1"/>
+<wire x1="79.7" y1="26.05" x2="80.7" y2="25" width="0.15" layer="1"/>
+<wire x1="80.7" y1="25" x2="82.115" y2="25" width="0.15" layer="1"/>
 </signal>
 <signal name="TG9">
 <contactref element="U$13" pad="P$37"/>
-<contactref element="IC4" pad="F9"/>
-<wire x1="63.15" y1="50" x2="63.55" y2="50.4" width="0.15" layer="1"/>
-<via x="63.55" y="50.4" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="63.55" y1="50.4" x2="68.65" y2="50.4" width="0.15" layer="16"/>
-<wire x1="68.65" y1="50.4" x2="70.9" y2="46.85" width="0.15" layer="16"/>
-<wire x1="70.9" y1="46.85" x2="79.3" y2="46.85" width="0.15" layer="16"/>
-<wire x1="79.3" y1="46.85" x2="82.35" y2="43.1" width="0.15" layer="16"/>
-<wire x1="82.35" y1="43.1" x2="82.35" y2="25.6" width="0.15" layer="16"/>
-<wire x1="82.35" y1="25.6" x2="84.2" y2="23.75" width="0.15" layer="16"/>
-<via x="84.2" y="23.75" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="84.2" y1="23.75" x2="85.905" y2="23.75" width="0.15" layer="1"/>
+<contactref element="IC4" pad="G11"/>
+<wire x1="64.75" y1="49.2" x2="67.55" y2="49.2" width="0.15" layer="1"/>
+<wire x1="67.55" y1="49.2" x2="79" y2="43" width="0.15" layer="1"/>
+<wire x1="79" y1="43" x2="79" y2="25.5" width="0.15" layer="1"/>
+<wire x1="79" y1="25.5" x2="80.25" y2="24.3" width="0.15" layer="1"/>
+<wire x1="80.25" y1="24.3" x2="83.7" y2="24.3" width="0.15" layer="1"/>
+<wire x1="83.7" y1="24.3" x2="84.25" y2="23.75" width="0.15" layer="1"/>
+<wire x1="84.25" y1="23.75" x2="85.905" y2="23.75" width="0.15" layer="1"/>
 <wire x1="85.905" y1="23.75" x2="85.925" y2="23.73" width="0.15" layer="1"/>
 </signal>
 <signal name="V+">
@@ -6535,7 +6564,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="121" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<via x="62.75" y="52" extent="1-16" drill="0.2" shape="octagon"/>
+<via x="61.95" y="52.05" extent="1-16" drill="0.2" shape="octagon"/>
 <via x="58.75" y="51.2" extent="1-16" drill="0.2" shape="octagon"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R3" pad="2"/>
@@ -6571,9 +6600,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C3" pad="2"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
-<wire x1="62.75" y1="52" x2="71.95" y2="55.5" width="0" layer="19" extent="1-1"/>
-<wire x1="62.35" y1="51.6" x2="62.75" y2="52" width="0" layer="19" extent="1-1"/>
+<wire x1="62.35" y1="51.6" x2="71.95" y2="55.5" width="0" layer="19" extent="1-1"/>
 <wire x1="61.95" y1="51.5" x2="62.35" y2="51.6" width="0" layer="19" extent="1-16"/>
+<wire x1="61.95" y1="52.05" x2="61.95" y2="51.5" width="0" layer="19" extent="16-16"/>
 <wire x1="59.15" y1="51.6" x2="61.95" y2="51.5" width="0" layer="19" extent="1-16"/>
 <wire x1="58.75" y1="51.2" x2="59.15" y2="51.6" width="0" layer="19" extent="1-1"/>
 <wire x1="58.45" y1="52.15" x2="59.15" y2="51.6" width="0" layer="19" extent="1-16"/>
@@ -6656,109 +6685,211 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="P8">
 <contactref element="SV1" pad="8"/>
-<contactref element="IC4" pad="A5"/>
-<wire x1="59.95" y1="54" x2="59.95" y2="74.7" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="12"/>
-<wire x1="60.35" y1="84.55" x2="70.63" y2="91.07" width="0" layer="19" extent="1-1"/>
-<wire x1="59.95" y1="74.7" x2="60.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="C9"/>
+<wire x1="63.15" y1="52.4" x2="63.55" y2="52.8" width="0.15" layer="1"/>
+<via x="63.55" y="52.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.55" y1="52.8" x2="63.55" y2="55.3" width="0.15" layer="16"/>
+<via x="63.55" y="55.3" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.55" y1="55.3" x2="63.55" y2="80.25" width="0.15" layer="1"/>
+<wire x1="63.55" y1="80.25" x2="60.35" y2="83.45" width="0.15" layer="1"/>
+<wire x1="60.35" y1="83.45" x2="60.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="60.35" y1="84.55" x2="60.35" y2="86.55" width="0.15" layer="1"/>
+<wire x1="60.35" y1="86.55" x2="61.15" y2="87.35" width="0.15" layer="1"/>
+<wire x1="61.15" y1="87.35" x2="63.2" y2="87.35" width="0.15" layer="1"/>
+<wire x1="63.2" y1="87.35" x2="63.65" y2="88" width="0.15" layer="1"/>
+<wire x1="63.65" y1="88" x2="63.65" y2="90.1" width="0.15" layer="1"/>
+<wire x1="63.65" y1="90.1" x2="64.9" y2="92.05" width="0.15" layer="1"/>
+<wire x1="64.9" y1="92.05" x2="69.35" y2="92.05" width="0.15" layer="1"/>
+<wire x1="69.35" y1="92.05" x2="70.63" y2="91.07" width="0.15" layer="1"/>
 </signal>
 <signal name="P9">
 <contactref element="SV1" pad="7"/>
-<contactref element="IC4" pad="A7"/>
-<wire x1="61.55" y1="54" x2="61.55" y2="73.75" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="13"/>
-<wire x1="60.85" y1="84.55" x2="70.63" y2="88.53" width="0" layer="19" extent="1-1"/>
-<wire x1="61.55" y1="73.75" x2="60.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="B9"/>
+<wire x1="63.15" y1="53.2" x2="63.2" y2="53.2" width="0.15" layer="1"/>
+<wire x1="63.2" y1="53.2" x2="63.55" y2="53.55" width="0.15" layer="1"/>
+<wire x1="63.55" y1="53.55" x2="63.55" y2="54.55" width="0.15" layer="1"/>
+<wire x1="63.55" y1="54.55" x2="64" y2="54.85" width="0.15" layer="1"/>
+<wire x1="64" y1="54.85" x2="64" y2="80.25" width="0.15" layer="1"/>
+<wire x1="64" y1="80.25" x2="60.85" y2="83.4" width="0.15" layer="1"/>
+<wire x1="60.85" y1="83.4" x2="60.85" y2="84.55" width="0.15" layer="1"/>
+<wire x1="60.85" y1="84.55" x2="60.85" y2="86.5" width="0.15" layer="1"/>
+<wire x1="60.85" y1="86.5" x2="61.35" y2="87" width="0.15" layer="1"/>
+<wire x1="61.35" y1="87" x2="63.3" y2="87" width="0.15" layer="1"/>
+<wire x1="63.3" y1="87" x2="63.95" y2="87.9" width="0.15" layer="1"/>
+<wire x1="63.95" y1="87.9" x2="63.95" y2="89.4" width="0.15" layer="1"/>
+<wire x1="63.95" y1="89.4" x2="64.45" y2="90.1" width="0.15" layer="1"/>
+<wire x1="64.45" y1="90.1" x2="69.26" y2="90.1" width="0.15" layer="1"/>
+<wire x1="69.26" y1="90.1" x2="70.63" y2="88.53" width="0.15" layer="1"/>
 </signal>
 <signal name="P7">
 <contactref element="SV2" pad="1"/>
-<contactref element="IC4" pad="B5"/>
-<wire x1="59.95" y1="53.2" x2="59.55" y2="53.6" width="0.15" layer="1"/>
-<wire x1="59.55" y1="53.6" x2="59.55" y2="74.55" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="11"/>
-<wire x1="55.4" y1="88.53" x2="59.85" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="59.55" y1="74.55" x2="59.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="B8"/>
+<wire x1="62.35" y1="53.2" x2="62.75" y2="53.6" width="0.15" layer="1"/>
+<wire x1="62.75" y1="53.6" x2="62.75" y2="80.55" width="0.15" layer="1"/>
+<wire x1="59.85" y1="84.55" x2="59.85" y2="85.9" width="0.15" layer="1"/>
+<wire x1="59.85" y1="85.9" x2="58.25" y2="87.5" width="0.15" layer="1"/>
+<wire x1="58.25" y1="87.5" x2="57.9" y2="87.5" width="0.15" layer="1"/>
+<wire x1="57.9" y1="87.5" x2="56.9" y2="88.5" width="0.15" layer="1"/>
+<wire x1="56.9" y1="88.5" x2="55.43" y2="88.5" width="0.15" layer="1"/>
+<wire x1="55.43" y1="88.5" x2="55.4" y2="88.53" width="0.15" layer="1"/>
+<wire x1="62.75" y1="80.55" x2="59.85" y2="83.45" width="0.15" layer="1"/>
+<wire x1="59.85" y1="83.45" x2="59.85" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P5">
 <contactref element="SV2" pad="3"/>
-<contactref element="IC4" pad="D5"/>
-<wire x1="59.95" y1="51.6" x2="60.35" y2="52" width="0.15" layer="1"/>
-<wire x1="60.35" y1="52" x2="60.35" y2="52.8" width="0.15" layer="1"/>
-<via x="60.35" y="52.8" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="60.35" y1="52.8" x2="60.35" y2="54.5" width="0.15" layer="16"/>
-<wire x1="60.35" y1="54.5" x2="58.45" y2="56.45" width="0.15" layer="16"/>
-<wire x1="58.45" y1="56.45" x2="58.45" y2="72.9" width="0.15" layer="16"/>
 <contactref element="CAM1" pad="8"/>
-<wire x1="52.86" y1="88.53" x2="58.35" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="58.45" y1="72.9" x2="58.35" y2="84.55" width="0" layer="19" extent="1-16"/>
+<wire x1="58.35" y1="84.55" x2="58.35" y2="85.6" width="0.15" layer="1"/>
+<wire x1="58.35" y1="85.6" x2="56.75" y2="87.2" width="0.15" layer="1"/>
+<wire x1="56.75" y1="87.2" x2="54.19" y2="87.2" width="0.15" layer="1"/>
+<wire x1="54.19" y1="87.2" x2="52.86" y2="88.53" width="0.15" layer="1"/>
+<contactref element="IC4" pad="D7"/>
+<wire x1="61.55" y1="51.6" x2="61.15" y2="52" width="0.15" layer="1"/>
+<wire x1="61.15" y1="52" x2="60.6" y2="52" width="0.15" layer="1"/>
+<wire x1="60.6" y1="52" x2="60.35" y2="52.25" width="0.15" layer="1"/>
+<wire x1="60.35" y1="52.25" x2="60.35" y2="52.8" width="0.15" layer="1"/>
+<via x="60.35" y="52.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="60.35" y1="52.8" x2="60.35" y2="56.2" width="0.15" layer="16"/>
+<via x="60.35" y="56.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="60.35" y1="56.2" x2="60.35" y2="81.4" width="0.15" layer="1"/>
+<wire x1="60.35" y1="81.4" x2="58.35" y2="83.4" width="0.15" layer="1"/>
+<wire x1="58.35" y1="83.4" x2="58.35" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P3">
 <contactref element="SV2" pad="5"/>
-<contactref element="IC4" pad="B3"/>
-<wire x1="58.35" y1="53.2" x2="57.95" y2="53.6" width="0.15" layer="1"/>
-<wire x1="57.95" y1="53.6" x2="57.95" y2="72" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="6"/>
-<wire x1="50.32" y1="88.53" x2="57.35" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="57.95" y1="72" x2="57.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="57.35" y1="84.55" x2="57.35" y2="85.5" width="0.15" layer="1"/>
+<wire x1="57.35" y1="85.5" x2="56.45" y2="86.4" width="0.15" layer="1"/>
+<wire x1="56.45" y1="86.4" x2="52.45" y2="86.4" width="0.15" layer="1"/>
+<wire x1="52.45" y1="86.4" x2="50.32" y2="88.53" width="0.15" layer="1"/>
+<contactref element="IC4" pad="A4"/>
+<wire x1="59.15" y1="54" x2="59.15" y2="81.6" width="0.15" layer="1"/>
+<wire x1="59.15" y1="81.6" x2="57.35" y2="83.4" width="0.15" layer="1"/>
+<wire x1="57.35" y1="83.4" x2="57.35" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P1">
 <contactref element="SV2" pad="7"/>
-<contactref element="IC4" pad="A3"/>
-<wire x1="58.35" y1="54" x2="58.35" y2="72.4" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="4"/>
-<wire x1="47.78" y1="88.53" x2="56.35" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="58.35" y1="72.4" x2="56.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="B3"/>
+<wire x1="58.35" y1="53.2" x2="57.95" y2="53.6" width="0.15" layer="1"/>
+<wire x1="57.95" y1="53.6" x2="57.95" y2="81.85" width="0.15" layer="1"/>
+<wire x1="56.35" y1="84.55" x2="56.35" y2="85.5" width="0.15" layer="1"/>
+<wire x1="56.35" y1="85.5" x2="56.15" y2="85.7" width="0.15" layer="1"/>
+<wire x1="56.15" y1="85.7" x2="50.61" y2="85.7" width="0.15" layer="1"/>
+<wire x1="50.61" y1="85.7" x2="47.78" y2="88.53" width="0.15" layer="1"/>
+<wire x1="57.95" y1="81.85" x2="56.35" y2="83.45" width="0.15" layer="1"/>
+<wire x1="56.35" y1="83.45" x2="56.35" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P0">
 <contactref element="SV2" pad="8"/>
 <contactref element="IC4" pad="A1"/>
-<wire x1="56.75" y1="54" x2="56.75" y2="71.1" width="0.15" layer="1"/>
+<wire x1="56.75" y1="54" x2="56.7" y2="77.35" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="3"/>
-<wire x1="47.78" y1="91.07" x2="55.85" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="56.75" y1="71.1" x2="55.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="55.85" y1="84.55" x2="55.85" y2="85.3" width="0.15" layer="1"/>
+<wire x1="55.85" y1="85.3" x2="55.7" y2="85.45" width="0.15" layer="1"/>
+<wire x1="55.7" y1="85.45" x2="49.1" y2="85.45" width="0.15" layer="1"/>
+<wire x1="49.1" y1="85.45" x2="46.5" y2="88.15" width="0.15" layer="1"/>
+<wire x1="46.5" y1="88.15" x2="46.5" y2="89.69" width="0.15" layer="1"/>
+<wire x1="46.5" y1="89.69" x2="47.78" y2="91.07" width="0.15" layer="1"/>
+<wire x1="56.7" y1="77.35" x2="56.7" y2="82.65" width="0.15" layer="1"/>
+<wire x1="56.7" y1="82.65" x2="55.85" y2="83.5" width="0.15" layer="1"/>
+<wire x1="55.85" y1="83.5" x2="55.85" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P2">
 <contactref element="SV2" pad="6"/>
-<contactref element="IC4" pad="A2"/>
-<wire x1="57.55" y1="54" x2="57.55" y2="71.55" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="5"/>
-<wire x1="50.32" y1="91.07" x2="56.85" y2="84.55" width="0" layer="19" extent="1-1"/>
-<wire x1="57.55" y1="71.55" x2="56.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="B4"/>
+<wire x1="59.15" y1="53.2" x2="58.75" y2="53.6" width="0.15" layer="1"/>
+<wire x1="58.75" y1="53.6" x2="58.75" y2="81.5" width="0.15" layer="1"/>
+<wire x1="56.85" y1="84.55" x2="56.85" y2="85.55" width="0.15" layer="1"/>
+<wire x1="56.85" y1="85.55" x2="56.35" y2="86.05" width="0.15" layer="1"/>
+<wire x1="56.35" y1="86.05" x2="51.2" y2="86.05" width="0.15" layer="1"/>
+<wire x1="51.2" y1="86.05" x2="49.05" y2="88.2" width="0.15" layer="1"/>
+<wire x1="49.05" y1="88.2" x2="49.05" y2="89.8" width="0.15" layer="1"/>
+<wire x1="49.05" y1="89.8" x2="50.32" y2="91.07" width="0.15" layer="1"/>
+<wire x1="58.75" y1="81.5" x2="56.85" y2="83.4" width="0.15" layer="1"/>
+<wire x1="56.85" y1="83.4" x2="56.85" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P4">
 <contactref element="SV2" pad="4"/>
-<contactref element="IC4" pad="B4"/>
-<wire x1="59.15" y1="53.2" x2="58.75" y2="53.6" width="0.15" layer="1"/>
-<wire x1="58.75" y1="53.6" x2="58.75" y2="73.3" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="7"/>
-<wire x1="57.85" y1="84.55" x2="52.86" y2="91.07" width="0" layer="19" extent="1-1"/>
-<wire x1="58.75" y1="73.3" x2="57.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="57.85" y1="84.55" x2="57.85" y2="85.55" width="0.15" layer="1"/>
+<wire x1="57.85" y1="85.55" x2="56.6" y2="86.8" width="0.15" layer="1"/>
+<wire x1="56.6" y1="86.8" x2="53.05" y2="86.8" width="0.15" layer="1"/>
+<wire x1="53.05" y1="86.8" x2="51.65" y2="88.2" width="0.15" layer="1"/>
+<wire x1="51.65" y1="88.2" x2="51.65" y2="89.86" width="0.15" layer="1"/>
+<wire x1="51.65" y1="89.86" x2="52.86" y2="91.07" width="0.15" layer="1"/>
+<contactref element="IC4" pad="D5"/>
+<wire x1="59.95" y1="51.6" x2="59.55" y2="52.2" width="0.15" layer="1"/>
+<wire x1="59.55" y1="52.2" x2="59.55" y2="52.8" width="0.15" layer="1"/>
+<via x="59.55" y="52.8" extent="1-16" drill="0.2" shape="octagon"/>
+<wire x1="59.55" y1="52.8" x2="59.55" y2="55.2" width="0.15" layer="16"/>
+<via x="59.55" y="55.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="59.55" y1="55.2" x2="59.55" y2="81.65" width="0.15" layer="1"/>
+<wire x1="59.55" y1="81.65" x2="57.85" y2="83.35" width="0.15" layer="1"/>
+<wire x1="57.85" y1="83.35" x2="57.85" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P6">
 <contactref element="SV2" pad="2"/>
-<contactref element="IC4" pad="A4"/>
-<wire x1="59.15" y1="54" x2="59.15" y2="73.95" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="9"/>
-<wire x1="58.85" y1="84.55" x2="55.4" y2="91.07" width="0" layer="19" extent="1-1"/>
-<wire x1="59.15" y1="73.95" x2="58.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="58.85" y1="84.55" x2="58.85" y2="85.7" width="0.15" layer="1"/>
+<wire x1="58.85" y1="85.7" x2="57" y2="87.55" width="0.15" layer="1"/>
+<wire x1="57" y1="87.55" x2="54.8" y2="87.55" width="0.15" layer="1"/>
+<wire x1="54.8" y1="87.55" x2="54.1" y2="88.35" width="0.15" layer="1"/>
+<wire x1="54.1" y1="88.35" x2="54.1" y2="89.77" width="0.15" layer="1"/>
+<wire x1="54.1" y1="89.77" x2="55.4" y2="91.07" width="0.15" layer="1"/>
+<contactref element="IC4" pad="B5"/>
+<wire x1="59.95" y1="53.2" x2="60.35" y2="53.6" width="0.15" layer="1"/>
+<wire x1="60.35" y1="53.6" x2="60.35" y2="55.7" width="0.15" layer="1"/>
+<wire x1="60.35" y1="55.7" x2="60.75" y2="56" width="0.15" layer="1"/>
+<wire x1="60.75" y1="56" x2="60.75" y2="81.55" width="0.15" layer="1"/>
+<wire x1="60.75" y1="81.55" x2="58.85" y2="83.45" width="0.15" layer="1"/>
+<wire x1="58.85" y1="83.45" x2="58.85" y2="84.55" width="0.15" layer="1"/>
 </signal>
 <signal name="P11">
 <contactref element="SV1" pad="5"/>
-<contactref element="IC4" pad="A8"/>
-<wire x1="62.35" y1="54" x2="62.35" y2="72.1" width="0.15" layer="1"/>
 <contactref element="CAM1" pad="18"/>
-<wire x1="63.35" y1="84.55" x2="73.17" y2="88.53" width="0" layer="19" extent="1-1"/>
-<wire x1="62.35" y1="72.1" x2="63.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="A11"/>
+<wire x1="64.75" y1="54" x2="65.3" y2="54" width="0.15" layer="1"/>
+<wire x1="65.3" y1="54" x2="65.95" y2="54.6" width="0.15" layer="1"/>
+<wire x1="65.95" y1="54.6" x2="65.95" y2="80.8" width="0.15" layer="1"/>
+<wire x1="65.95" y1="80.8" x2="63.35" y2="83.4" width="0.15" layer="1"/>
+<wire x1="63.35" y1="83.4" x2="63.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="63.35" y1="84.55" x2="63.35" y2="86.1" width="0.15" layer="1"/>
+<wire x1="63.35" y1="86.1" x2="64.55" y2="87.35" width="0.15" layer="1"/>
+<wire x1="64.55" y1="87.35" x2="64.55" y2="89.25" width="0.15" layer="1"/>
+<wire x1="64.55" y1="89.25" x2="64.85" y2="89.55" width="0.15" layer="1"/>
+<wire x1="64.85" y1="89.55" x2="68.65" y2="89.55" width="0.15" layer="1"/>
+<wire x1="68.65" y1="89.55" x2="69.15" y2="88.9" width="0.15" layer="1"/>
+<wire x1="69.15" y1="88.9" x2="69.15" y2="88" width="0.15" layer="1"/>
+<wire x1="69.15" y1="88" x2="70.45" y2="86.7" width="0.15" layer="1"/>
+<wire x1="70.45" y1="86.7" x2="71.34" y2="86.7" width="0.15" layer="1"/>
+<wire x1="71.34" y1="86.7" x2="73.17" y2="88.53" width="0.15" layer="1"/>
 </signal>
 <signal name="P10">
 <contactref element="SV1" pad="6"/>
-<contactref element="IC4" pad="C7"/>
-<wire x1="61.55" y1="52.4" x2="61.95" y2="52.8" width="0.15" layer="1"/>
-<via x="61.95" y="52.8" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="61.95" y1="52.8" x2="61.95" y2="72.1" width="0.15" layer="16"/>
 <contactref element="CAM1" pad="16"/>
-<wire x1="62.35" y1="84.55" x2="73.17" y2="91.07" width="0" layer="19" extent="1-1"/>
-<wire x1="61.95" y1="72.1" x2="62.35" y2="84.55" width="0" layer="19" extent="1-16"/>
+<contactref element="IC4" pad="A10"/>
+<wire x1="63.95" y1="54" x2="64.35" y2="54.4" width="0.15" layer="1"/>
+<wire x1="64.35" y1="54.4" x2="64.35" y2="81.3" width="0.15" layer="1"/>
+<wire x1="64.35" y1="81.3" x2="62.35" y2="83.3" width="0.15" layer="1"/>
+<wire x1="62.35" y1="83.3" x2="62.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="62.35" y1="84.55" x2="62.35" y2="86.35" width="0.15" layer="1"/>
+<wire x1="62.35" y1="86.35" x2="62.55" y2="86.55" width="0.15" layer="1"/>
+<wire x1="62.55" y1="86.55" x2="63.35" y2="86.55" width="0.15" layer="1"/>
+<wire x1="63.35" y1="86.55" x2="64.25" y2="87.55" width="0.15" layer="1"/>
+<wire x1="64.25" y1="87.55" x2="64.25" y2="89.3" width="0.15" layer="1"/>
+<wire x1="64.25" y1="89.3" x2="64.7" y2="89.85" width="0.15" layer="1"/>
+<wire x1="64.7" y1="89.85" x2="68.95" y2="89.85" width="0.15" layer="1"/>
+<wire x1="68.95" y1="89.85" x2="69.5" y2="89" width="0.15" layer="1"/>
+<wire x1="69.5" y1="89" x2="69.5" y2="88.15" width="0.15" layer="1"/>
+<wire x1="69.5" y1="88.15" x2="70.35" y2="87.3" width="0.15" layer="1"/>
+<wire x1="70.35" y1="87.3" x2="71.1" y2="87.3" width="0.15" layer="1"/>
+<wire x1="71.1" y1="87.3" x2="71.8" y2="88" width="0.15" layer="1"/>
+<wire x1="71.8" y1="88" x2="71.8" y2="89.7" width="0.15" layer="1"/>
+<wire x1="71.8" y1="89.7" x2="73.17" y2="91.07" width="0.15" layer="1"/>
 </signal>
 <signal name="QD4">
 <contactref element="QD6" pad="58"/>
@@ -6815,48 +6946,117 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="P12">
 <contactref element="SV1" pad="4"/>
-<contactref element="IC4" pad="D7"/>
-<wire x1="61.55" y1="51.6" x2="61.95" y2="52" width="0.15" layer="1"/>
-<via x="61.95" y="52" extent="1-16" drill="0.2" shape="octagon"/>
-<wire x1="61.95" y1="52" x2="62.75" y2="52.8" width="0.15" layer="16"/>
-<wire x1="62.75" y1="52.8" x2="62.75" y2="72" width="0.15" layer="16"/>
 <contactref element="MEZZANINE" pad="P1"/>
 <contactref element="LCD" pad="8"/>
-<wire x1="58.595" y1="92.24" x2="75.71" y2="91.07" width="0" layer="19" extent="1-1"/>
-<wire x1="58.25" y1="93.7" x2="58.595" y2="92.24" width="0" layer="19" extent="1-16"/>
-<wire x1="62.75" y1="72" x2="58.595" y2="92.24" width="0" layer="19" extent="1-16"/>
+<contactref element="IC4" pad="B11"/>
+<wire x1="64.75" y1="53.2" x2="65.75" y2="53.2" width="0.15" layer="1"/>
+<wire x1="65.75" y1="53.2" x2="66.35" y2="53.7" width="0.15" layer="1"/>
+<wire x1="66.35" y1="53.7" x2="66.35" y2="76.95" width="0.15" layer="1"/>
+<wire x1="66.35" y1="76.95" x2="74.5" y2="85.1" width="0.15" layer="1"/>
+<wire x1="74.5" y1="85.1" x2="74.5" y2="89.85" width="0.15" layer="1"/>
+<wire x1="74.5" y1="89.85" x2="75.71" y2="91.06" width="0.15" layer="1"/>
+<wire x1="75.71" y1="91.06" x2="75.71" y2="91.07" width="0.15" layer="1"/>
+<wire x1="58.25" y1="93.7" x2="58.25" y2="92.585" width="0.15" layer="16"/>
+<wire x1="58.25" y1="92.585" x2="58.595" y2="92.09" width="0.15" layer="16"/>
+<wire x1="58.595" y1="92.09" x2="59.81" y2="92.09" width="0.15" layer="16"/>
+<wire x1="59.81" y1="92.09" x2="59.9" y2="92.2" width="0.15" layer="16"/>
+<via x="59.9" y="92.2" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="59.9" y1="92.2" x2="58.635" y2="92.2" width="0.15" layer="1"/>
+<wire x1="58.635" y1="92.2" x2="58.595" y2="92.24" width="0.15" layer="1"/>
+<wire x1="59.9" y1="92.2" x2="62.9" y2="92.2" width="0.15" layer="16"/>
+<wire x1="62.9" y1="92.2" x2="63.35" y2="91.75" width="0.15" layer="16"/>
+<wire x1="63.35" y1="91.75" x2="63.7" y2="91.75" width="0.15" layer="16"/>
+<wire x1="63.7" y1="91.75" x2="64.8" y2="92.7" width="0.15" layer="16"/>
+<wire x1="64.8" y1="92.7" x2="74.08" y2="92.7" width="0.15" layer="16"/>
+<wire x1="74.08" y1="92.7" x2="75.71" y2="91.07" width="0.15" layer="16"/>
 </signal>
 <signal name="P13">
 <contactref element="SV1" pad="3"/>
-<contactref element="IC4" pad="C8"/>
-<wire x1="62.35" y1="52.4" x2="62.75" y2="52.8" width="0.15" layer="1"/>
-<wire x1="62.75" y1="52.8" x2="62.75" y2="71.7" width="0.15" layer="1"/>
 <contactref element="MEZZANINE" pad="P8"/>
 <contactref element="LCD" pad="9"/>
-<wire x1="62.405" y1="92.24" x2="75.71" y2="88.53" width="0" layer="19" extent="1-1"/>
-<wire x1="58.75" y1="93.7" x2="62.405" y2="92.24" width="0" layer="19" extent="1-16"/>
-<wire x1="62.75" y1="71.7" x2="62.405" y2="92.24" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="C11"/>
+<wire x1="64.75" y1="52.4" x2="66" y2="52.4" width="0.15" layer="1"/>
+<wire x1="66" y1="52.4" x2="66.75" y2="53.15" width="0.15" layer="1"/>
+<wire x1="66.75" y1="53.15" x2="66.75" y2="76.75" width="0.15" layer="1"/>
+<wire x1="66.75" y1="76.75" x2="75.71" y2="85.71" width="0.15" layer="1"/>
+<wire x1="75.71" y1="85.71" x2="75.71" y2="88.53" width="0.15" layer="1"/>
+<wire x1="58.75" y1="93.7" x2="58.75" y2="92.8" width="0.15" layer="16"/>
+<wire x1="58.75" y1="92.8" x2="58.9" y2="92.65" width="0.15" layer="16"/>
+<wire x1="62.365" y1="92.2" x2="62.405" y2="92.24" width="0.15" layer="1"/>
+<wire x1="75.71" y1="88.53" x2="75.71" y2="89.36" width="0.15" layer="1"/>
+<wire x1="75.71" y1="89.36" x2="76.95" y2="90.6" width="0.15" layer="1"/>
+<wire x1="76.95" y1="90.6" x2="76.95" y2="91.6" width="0.15" layer="1"/>
+<wire x1="76.95" y1="91.6" x2="75.5" y2="93.05" width="0.15" layer="1"/>
+<wire x1="75.5" y1="93.05" x2="64.7" y2="93.05" width="0.15" layer="1"/>
+<wire x1="64.7" y1="93.05" x2="63.9" y2="92.25" width="0.15" layer="1"/>
+<wire x1="63.9" y1="92.25" x2="63.8" y2="92.25" width="0.15" layer="1"/>
+<wire x1="63.65" y1="92.25" x2="62.415" y2="92.25" width="0.15" layer="1"/>
+<wire x1="62.415" y1="92.25" x2="62.405" y2="92.24" width="0.15" layer="1"/>
+<wire x1="58.9" y1="92.65" x2="63.25" y2="92.65" width="0.15" layer="16"/>
+<wire x1="63.25" y1="92.65" x2="63.65" y2="92.25" width="0.15" layer="16"/>
+<via x="63.65" y="92.25" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="63.65" y1="92.25" x2="63.8" y2="92.25" width="0.15" layer="1"/>
 </signal>
 <signal name="P14">
 <contactref element="SV1" pad="2"/>
-<contactref element="IC4" pad="A9"/>
-<wire x1="63.15" y1="54" x2="63.15" y2="71.1" width="0.15" layer="1"/>
 <contactref element="MEZZANINE" pad="P2"/>
 <contactref element="LCD" pad="10"/>
-<wire x1="59.25" y1="93.7" x2="78.25" y2="91.07" width="0" layer="19" extent="16-16"/>
-<wire x1="58.595" y1="90.97" x2="59.25" y2="93.7" width="0" layer="19" extent="1-16"/>
-<wire x1="63.15" y1="71.1" x2="58.595" y2="90.97" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="D10"/>
+<wire x1="63.95" y1="51.6" x2="64.35" y2="52" width="0.15" layer="1"/>
+<wire x1="64.35" y1="52" x2="66.65" y2="52" width="0.15" layer="1"/>
+<wire x1="66.65" y1="52" x2="67.15" y2="52.5" width="0.15" layer="1"/>
+<wire x1="67.15" y1="52.5" x2="67.15" y2="76.55" width="0.15" layer="1"/>
+<wire x1="67.15" y1="76.55" x2="76.95" y2="86.35" width="0.15" layer="1"/>
+<wire x1="76.95" y1="86.35" x2="76.95" y2="89.8" width="0.15" layer="1"/>
+<wire x1="76.95" y1="89.8" x2="78.22" y2="91.07" width="0.15" layer="1"/>
+<wire x1="78.22" y1="91.07" x2="78.25" y2="91.07" width="0.15" layer="1"/>
+<wire x1="59.25" y1="93.7" x2="59.25" y2="94.6" width="0.15" layer="16"/>
+<wire x1="59.25" y1="94.6" x2="59.2" y2="94.65" width="0.15" layer="16"/>
+<via x="59.2" y="94.65" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="59.2" y1="94.65" x2="58.25" y2="94.65" width="0.15" layer="1"/>
+<wire x1="58.25" y1="94.65" x2="57.05" y2="93.45" width="0.15" layer="1"/>
+<wire x1="57.05" y1="93.45" x2="57.05" y2="91.2" width="0.15" layer="1"/>
+<wire x1="57.05" y1="91.2" x2="57.3" y2="90.95" width="0.15" layer="1"/>
+<wire x1="57.3" y1="90.95" x2="58.575" y2="90.95" width="0.15" layer="1"/>
+<wire x1="58.575" y1="90.95" x2="58.595" y2="90.97" width="0.15" layer="1"/>
+<wire x1="58.595" y1="90.97" x2="60.23" y2="90.97" width="0.15" layer="1"/>
+<wire x1="60.23" y1="90.97" x2="60.9" y2="90.35" width="0.15" layer="1"/>
+<wire x1="60.9" y1="90.35" x2="63.45" y2="90.35" width="0.15" layer="1"/>
+<wire x1="63.45" y1="90.35" x2="64.8" y2="92.35" width="0.15" layer="1"/>
+<wire x1="64.8" y1="92.35" x2="75" y2="92.35" width="0.15" layer="1"/>
+<wire x1="75" y1="92.35" x2="75.1" y2="92.25" width="0.15" layer="1"/>
+<via x="75.1" y="92.25" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="75.1" y1="92.25" x2="74.8" y2="92.55" width="0.15" layer="16"/>
+<wire x1="74.8" y1="92.55" x2="74.8" y2="93.05" width="0.15" layer="16"/>
+<wire x1="74.8" y1="93.05" x2="75.05" y2="93.3" width="0.15" layer="16"/>
+<wire x1="75.05" y1="93.3" x2="76.05" y2="93.3" width="0.15" layer="16"/>
+<wire x1="76.05" y1="93.3" x2="78.25" y2="91.1" width="0.15" layer="16"/>
+<wire x1="78.25" y1="91.1" x2="78.25" y2="91.07" width="0.15" layer="16"/>
 </signal>
 <signal name="P15">
-<contactref element="IC4" pad="B8"/>
 <contactref element="SV1" pad="1"/>
-<wire x1="62.35" y1="53.2" x2="61.95" y2="53.6" width="0.15" layer="1"/>
-<wire x1="61.95" y1="53.6" x2="61.95" y2="72.55" width="0.15" layer="1"/>
 <contactref element="MEZZANINE" pad="P7"/>
 <contactref element="LCD" pad="12"/>
-<wire x1="62.405" y1="90.97" x2="78.25" y2="88.53" width="0" layer="19" extent="1-1"/>
-<wire x1="60.25" y1="93.7" x2="62.405" y2="90.97" width="0" layer="19" extent="1-16"/>
-<wire x1="61.95" y1="72.55" x2="62.405" y2="90.97" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="D11"/>
+<wire x1="64.75" y1="51.6" x2="66.75" y2="51.6" width="0.15" layer="1"/>
+<wire x1="66.75" y1="51.6" x2="67.5" y2="52.35" width="0.15" layer="1"/>
+<wire x1="67.5" y1="52.35" x2="67.5" y2="76.2" width="0.15" layer="1"/>
+<wire x1="67.5" y1="76.2" x2="78.25" y2="86.95" width="0.15" layer="1"/>
+<wire x1="78.25" y1="86.95" x2="78.25" y2="88.53" width="0.15" layer="1"/>
+<wire x1="60.25" y1="93.7" x2="60.25" y2="94.6" width="0.15" layer="16"/>
+<via x="60.25" y="94.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="60.25" y1="94.6" x2="60.25" y2="91.45" width="0.15" layer="1"/>
+<wire x1="60.25" y1="91.45" x2="60.9" y2="90.95" width="0.15" layer="1"/>
+<wire x1="60.9" y1="90.95" x2="62.385" y2="90.95" width="0.15" layer="1"/>
+<wire x1="62.385" y1="90.95" x2="62.405" y2="90.97" width="0.15" layer="1"/>
+<wire x1="62.385" y1="90.95" x2="63.35" y2="90.95" width="0.15" layer="1"/>
+<wire x1="63.35" y1="90.95" x2="64.8" y2="92.7" width="0.15" layer="1"/>
+<wire x1="64.8" y1="92.7" x2="75.25" y2="92.7" width="0.15" layer="1"/>
+<via x="75.25" y="92.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="75.25" y1="92.7" x2="76.2" y2="92.35" width="0.15" layer="16"/>
+<wire x1="76.2" y1="92.35" x2="77" y2="91.55" width="0.15" layer="16"/>
+<wire x1="77" y1="91.55" x2="77" y2="89.78" width="0.15" layer="16"/>
+<wire x1="77" y1="89.78" x2="78.25" y2="88.53" width="0.15" layer="16"/>
 </signal>
 <signal name="!SS">
 <contactref element="U$11" pad="1"/>
@@ -6990,30 +7190,87 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="53.1" y1="46.15" x2="51.4" y2="44.45" width="0.15" layer="1"/>
 </signal>
 <signal name="R/SCL">
-<contactref element="RN1" pad="7"/>
+<contactref element="RN1" pad="6"/>
 <contactref element="CAM1" pad="20"/>
 <contactref element="IC4" pad="B6"/>
-<wire x1="60.75" y1="53.2" x2="60.35" y2="53.6" width="0.15" layer="1"/>
-<wire x1="60.35" y1="53.6" x2="60.35" y2="74.4" width="0.15" layer="1"/>
-<wire x1="64.35" y1="84.55" x2="60.95" y2="95.4" width="0" layer="19" extent="1-1"/>
-<wire x1="60.35" y1="74.4" x2="64.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="60.75" y1="53.2" x2="61.15" y2="53.6" width="0.15" layer="1"/>
+<wire x1="61.15" y1="53.6" x2="61.15" y2="78.35" width="0.15" layer="1"/>
+<wire x1="61.15" y1="78.35" x2="61.45" y2="78.5" width="0.15" layer="1"/>
+<via x="61.45" y="78.5" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="61.45" y1="78.5" x2="64.35" y2="81.4" width="0.15" layer="16"/>
+<wire x1="64.35" y1="81.4" x2="64.35" y2="83.4" width="0.15" layer="16"/>
+<via x="64.35" y="83.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="64.35" y1="83.4" x2="64.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="62.75" y1="87.5" x2="64.35" y2="85.8" width="0.15" layer="16"/>
+<wire x1="64.35" y1="85.8" x2="64.35" y2="85.6" width="0.15" layer="16"/>
+<via x="64.35" y="85.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="64.35" y1="85.6" x2="64.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="62.75" y1="87.5" x2="59.85" y2="90.6" width="0.15" layer="16"/>
+<wire x1="59.85" y1="90.6" x2="59.85" y2="91.55" width="0.15" layer="16"/>
+<via x="59.85" y="91.55" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="59.85" y1="91.55" x2="59.75" y2="91.65" width="0.15" layer="1"/>
+<wire x1="59.75" y1="91.65" x2="57.5" y2="91.65" width="0.15" layer="1"/>
+<wire x1="57.5" y1="91.65" x2="57.35" y2="91.8" width="0.15" layer="1"/>
+<wire x1="57.35" y1="91.8" x2="57.35" y2="93.15" width="0.15" layer="1"/>
+<wire x1="57.35" y1="93.15" x2="58.2" y2="94" width="0.15" layer="1"/>
+<wire x1="58.2" y1="94" x2="59.3" y2="94" width="0.15" layer="1"/>
+<wire x1="59.3" y1="94" x2="59.8" y2="94.5" width="0.15" layer="1"/>
+<wire x1="59.8" y1="94.5" x2="59.8" y2="94.8" width="0.15" layer="1"/>
+<wire x1="59.8" y1="94.8" x2="60.15" y2="95.15" width="0.15" layer="1"/>
+<wire x1="60.15" y1="95.15" x2="60.15" y2="95.4" width="0.15" layer="1"/>
 </signal>
 <signal name="G/SDA">
-<contactref element="RN1" pad="6"/>
+<contactref element="RN1" pad="8"/>
 <contactref element="CAM1" pad="22"/>
-<contactref element="IC4" pad="A6"/>
-<wire x1="60.75" y1="54" x2="60.75" y2="74.15" width="0.15" layer="1"/>
-<wire x1="65.35" y1="84.55" x2="60.15" y2="95.4" width="0" layer="19" extent="1-1"/>
-<wire x1="60.75" y1="74.15" x2="65.35" y2="84.55" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="A7"/>
+<wire x1="61.55" y1="54" x2="61.55" y2="77.8" width="0.15" layer="1"/>
+<via x="61.55" y="77.8" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="61.55" y1="77.8" x2="65.4" y2="81.65" width="0.15" layer="16"/>
+<wire x1="65.4" y1="81.65" x2="65.4" y2="83.4" width="0.15" layer="16"/>
+<via x="65.4" y="83.4" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="65.4" y1="83.4" x2="65.35" y2="83.45" width="0.15" layer="1"/>
+<wire x1="65.35" y1="83.45" x2="65.35" y2="84.55" width="0.15" layer="1"/>
+<wire x1="65.35" y1="84.55" x2="65.35" y2="85.85" width="0.15" layer="1"/>
+<wire x1="65.35" y1="85.85" x2="65.25" y2="85.95" width="0.15" layer="1"/>
+<via x="65.25" y="85.95" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="65.25" y1="85.95" x2="65.25" y2="87" width="0.15" layer="16"/>
+<wire x1="65.25" y1="87" x2="63.1" y2="89.15" width="0.15" layer="16"/>
+<wire x1="63.1" y1="89.15" x2="63.1" y2="91.25" width="0.15" layer="16"/>
+<wire x1="63.1" y1="91.25" x2="62.65" y2="91.7" width="0.15" layer="16"/>
+<wire x1="62.65" y1="91.7" x2="61.1" y2="91.7" width="0.15" layer="16"/>
+<via x="61.1" y="91.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="61.1" y1="91.7" x2="61.1" y2="93.3" width="0.15" layer="1"/>
+<wire x1="61.1" y1="93.3" x2="61.825" y2="94.475" width="0.15" layer="1"/>
+<wire x1="61.825" y1="94.475" x2="61.825" y2="95.4" width="0.15" layer="1"/>
 </signal>
 <signal name="B/EN">
 <contactref element="IC4" pad="B7"/>
-<contactref element="RN1" pad="8"/>
-<wire x1="61.55" y1="53.2" x2="61.15" y2="53.6" width="0.15" layer="1"/>
-<wire x1="61.15" y1="53.6" x2="61.15" y2="73.9" width="0.15" layer="1"/>
+<contactref element="RN1" pad="7"/>
 <contactref element="CAM1" pad="17"/>
-<wire x1="62.85" y1="84.55" x2="61.825" y2="95.4" width="0" layer="19" extent="1-1"/>
-<wire x1="61.15" y1="73.9" x2="62.85" y2="84.55" width="0" layer="19" extent="1-1"/>
+<wire x1="61.55" y1="53.2" x2="61.95" y2="53.6" width="0.15" layer="1"/>
+<wire x1="61.95" y1="53.6" x2="61.95" y2="79.65" width="0.15" layer="1"/>
+<wire x1="61.95" y1="79.65" x2="62.3" y2="80" width="0.15" layer="1"/>
+<via x="62.3" y="80" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.3" y1="80" x2="62.3" y2="82.8" width="0.15" layer="16"/>
+<wire x1="62.3" y1="82.8" x2="62.85" y2="83.35" width="0.15" layer="16"/>
+<via x="62.85" y="83.35" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.85" y1="83.35" x2="62.85" y2="84.55" width="0.15" layer="1"/>
+<wire x1="62.85" y1="84.55" x2="62.85" y2="85.6" width="0.15" layer="1"/>
+<via x="62.85" y="85.6" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="62.85" y1="85.6" x2="62.85" y2="85.25" width="0.15" layer="16"/>
+<wire x1="62.85" y1="85.25" x2="63.25" y2="84.85" width="0.15" layer="16"/>
+<wire x1="63.25" y1="84.85" x2="64.45" y2="84.85" width="0.15" layer="16"/>
+<wire x1="64.45" y1="84.85" x2="65" y2="85.4" width="0.15" layer="16"/>
+<wire x1="65" y1="85.4" x2="65" y2="86.85" width="0.15" layer="16"/>
+<wire x1="65" y1="86.85" x2="62.8" y2="89.05" width="0.15" layer="16"/>
+<wire x1="62.8" y1="89.05" x2="62.8" y2="91.05" width="0.15" layer="16"/>
+<wire x1="62.8" y1="91.05" x2="62.5" y2="91.3" width="0.15" layer="16"/>
+<wire x1="62.5" y1="91.3" x2="61" y2="91.3" width="0.15" layer="16"/>
+<wire x1="61" y1="91.3" x2="60.6" y2="91.7" width="0.15" layer="16"/>
+<via x="60.6" y="91.7" extent="1-16" drill="0.2" diameter="0.4064" shape="octagon"/>
+<wire x1="60.6" y1="91.7" x2="60.6" y2="94.25" width="0.15" layer="1"/>
+<wire x1="60.6" y1="94.25" x2="60.95" y2="94.6" width="0.15" layer="1"/>
+<wire x1="60.95" y1="94.6" x2="60.95" y2="95.4" width="0.15" layer="1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="D2" pad="2"/>
@@ -7784,7 +8041,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$23">
 <contactref element="LCD" pad="1"/>
 <contactref element="R4" pad="1"/>
-<wire x1="54.75" y1="93.7" x2="57.9" y2="95.75" width="0" layer="19" extent="1-16"/>
+<wire x1="54.75" y1="93.7" x2="57.95" y2="96.8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$24">
 <contactref element="RN7" pad="5"/>
@@ -7972,9 +8229,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="QCKX">
 <contactref element="IC4" pad="L10"/>
-<wire x1="63.95" y1="46" x2="64.4" y2="45.5" width="0.15" layer="1"/>
-<wire x1="64.4" y1="45.5" x2="64.4" y2="44.8" width="0.15" layer="1"/>
-<wire x1="64.4" y1="44.8" x2="65.3" y2="43.9" width="0.15" layer="1"/>
+<wire x1="63.95" y1="46" x2="64" y2="45.7" width="0.15" layer="1"/>
+<wire x1="64" y1="45.7" x2="64" y2="45" width="0.15" layer="1"/>
+<wire x1="64" y1="45" x2="65.3" y2="43.9" width="0.15" layer="1"/>
 <wire x1="65.3" y1="43.9" x2="68.1" y2="43.9" width="0.15" layer="1"/>
 <contactref element="RN12" pad="6"/>
 <wire x1="68.1" y1="43.9" x2="68.1" y2="41.7" width="0.15" layer="1"/>
@@ -7982,8 +8239,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="!QSSX">
 <contactref element="IC4" pad="K10"/>
 <wire x1="63.95" y1="46.8" x2="64.35" y2="46.4" width="0.15" layer="1"/>
-<wire x1="64.35" y1="46.4" x2="68.05" y2="46.4" width="0.15" layer="1"/>
-<wire x1="68.05" y1="46.4" x2="68.9" y2="44.35" width="0.15" layer="1"/>
+<wire x1="64.35" y1="46.4" x2="64.35" y2="45.1" width="0.15" layer="1"/>
+<wire x1="64.35" y1="45.1" x2="68.9" y2="44.35" width="0.15" layer="1"/>
 <wire x1="68.9" y1="44.35" x2="68.9" y2="42.5" width="0.15" layer="1"/>
 <wire x1="68.9" y1="42.5" x2="68.925" y2="41.825" width="0.15" layer="1"/>
 <contactref element="RN12" pad="5"/>

@@ -15604,14 +15604,14 @@ Source: RS Component / Phycomp</description>
 <text x="-69.85" y="50.8" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 <text x="-34.29" y="50.8" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="IOT_225" x="78.74" y="-17.78" length="middle" rot="R180"/>
-<pin name="IOT_222" x="78.74" y="-12.7" length="middle" rot="R180"/>
-<pin name="IOT_223" x="78.74" y="-15.24" length="middle" rot="R180"/>
+<pin name="IOT_222A" x="78.74" y="-12.7" length="middle" rot="R180"/>
+<pin name="IOT_223B" x="78.74" y="-15.24" length="middle" rot="R180"/>
 <pin name="IOT_211" x="78.74" y="-2.54" length="middle" rot="R180"/>
-<pin name="IOT_207" x="78.74" y="2.54" length="middle" rot="R180"/>
-<pin name="IOT_206" x="78.74" y="5.08" length="middle" rot="R180"/>
+<pin name="IOT_207B" x="78.74" y="2.54" length="middle" rot="R180"/>
+<pin name="IOT_206A" x="78.74" y="5.08" length="middle" rot="R180"/>
 <pin name="IOT_192" x="22.86" y="-17.78" length="middle"/>
-<pin name="IOT_190" x="22.86" y="-12.7" length="middle"/>
-<pin name="IOT_178" x="22.86" y="-5.08" length="middle"/>
+<pin name="IOT_190A" x="22.86" y="-12.7" length="middle"/>
+<pin name="IOT_178A" x="22.86" y="-5.08" length="middle"/>
 <pin name="IOT_170" x="22.86" y="5.08" length="middle"/>
 <pin name="IOT_168" x="22.86" y="7.62" length="middle"/>
 <pin name="IOL_2A" x="22.86" y="-30.48" length="middle"/>
@@ -15631,8 +15631,8 @@ Source: RS Component / Phycomp</description>
 <pin name="IOL_4A" x="22.86" y="-35.56" length="middle"/>
 <pin name="GNDPLL1" x="-68.58" y="12.7" length="middle"/>
 <pin name="VCCPLL1" x="-15.24" y="25.4" length="middle" rot="R180"/>
-<pin name="IOT_191" x="22.86" y="-15.24" length="middle"/>
-<pin name="IOT_179" x="22.86" y="-7.62" length="middle"/>
+<pin name="IOT_191B" x="22.86" y="-15.24" length="middle"/>
+<pin name="IOT_179B" x="22.86" y="-7.62" length="middle"/>
 <pin name="IOT_172" x="22.86" y="2.54" length="middle"/>
 <pin name="VPP_2V5" x="-15.24" y="33.02" length="middle" rot="R180"/>
 <pin name="IOR_160" x="78.74" y="20.32" length="middle" rot="R180"/>
@@ -15644,7 +15644,7 @@ Source: RS Component / Phycomp</description>
 <pin name="VCCIO_0" x="22.86" y="10.16" length="middle"/>
 <pin name="IOT_181" x="22.86" y="-10.16" length="middle"/>
 <pin name="VCC_2" x="-15.24" y="40.64" length="middle" rot="R180"/>
-<pin name="IOR_147" x="78.74" y="30.48" length="middle" rot="R180"/>
+<pin name="IOR_147A" x="78.74" y="30.48" length="middle" rot="R180"/>
 <pin name="IOR_154" x="78.74" y="22.86" length="middle" rot="R180"/>
 <pin name="IOR_152" x="78.74" y="25.4" length="middle" rot="R180"/>
 <pin name="IOL_8A" x="22.86" y="-45.72" length="middle"/>
@@ -15657,7 +15657,7 @@ Source: RS Component / Phycomp</description>
 <pin name="IOR_146" x="78.74" y="33.02" length="middle" rot="R180"/>
 <pin name="IOR_144" x="78.74" y="35.56" length="middle" rot="R180"/>
 <pin name="IOR_141_GBIN2" x="78.74" y="38.1" length="middle" rot="R180"/>
-<pin name="IOR_148" x="78.74" y="27.94" length="middle" rot="R180"/>
+<pin name="IOR_148B" x="78.74" y="27.94" length="middle" rot="R180"/>
 <pin name="IOL_12A" x="78.74" y="-25.4" length="middle" rot="R180"/>
 <pin name="IOL_12B" x="78.74" y="-27.94" length="middle" rot="R180"/>
 <pin name="IOL_13B_GBIN7" x="78.74" y="-33.02" length="middle" rot="R180"/>
@@ -15676,9 +15676,9 @@ Source: RS Component / Phycomp</description>
 <pin name="GND_7" x="-68.58" y="27.94" length="middle"/>
 <pin name="GND_8" x="-68.58" y="25.4" length="middle"/>
 <pin name="GND_9" x="-68.58" y="22.86" length="middle"/>
-<pin name="IOR_118" x="22.86" y="30.48" length="middle"/>
+<pin name="IOR_118B" x="22.86" y="30.48" length="middle"/>
 <pin name="IOR_128" x="22.86" y="22.86" length="middle"/>
-<pin name="IOR_120" x="22.86" y="25.4" length="middle"/>
+<pin name="IOR_120B" x="22.86" y="25.4" length="middle"/>
 <pin name="IOR_129" x="22.86" y="20.32" length="middle"/>
 <pin name="IOL_18A" x="78.74" y="-45.72" length="middle" rot="R180"/>
 <pin name="IOL_18B" x="78.74" y="-48.26" length="middle" rot="R180"/>
@@ -15689,8 +15689,8 @@ Source: RS Component / Phycomp</description>
 <pin name="IOB_87" x="-15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="VCC_4" x="-15.24" y="35.56" length="middle" rot="R180"/>
 <pin name="IOB_104_CBSEL1" x="-15.24" y="-15.24" length="middle" rot="R180"/>
-<pin name="IOR_116" x="22.86" y="35.56" length="middle"/>
-<pin name="IOR_119" x="22.86" y="27.94" length="middle"/>
+<pin name="IOR_116B" x="22.86" y="35.56" length="middle"/>
+<pin name="IOR_119A" x="22.86" y="27.94" length="middle"/>
 <pin name="IOL_23A" x="78.74" y="-50.8" length="middle" rot="R180"/>
 <pin name="IOL_25B" x="78.74" y="-58.42" length="middle" rot="R180"/>
 <pin name="IOB_57" x="-71.12" y="0" length="middle"/>
@@ -15700,7 +15700,7 @@ Source: RS Component / Phycomp</description>
 <pin name="**IOB_86" x="-15.24" y="0" length="middle" rot="R180"/>
 <pin name="IOB_91" x="-15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="IOB_106_SDI" x="-15.24" y="17.78" length="middle" rot="R180"/>
-<pin name="IOR_117" x="22.86" y="33.02" length="middle"/>
+<pin name="IOR_117A" x="22.86" y="33.02" length="middle"/>
 <pin name="IOR_114" x="22.86" y="40.64" length="middle"/>
 <pin name="IOL_23B" x="78.74" y="-53.34" length="middle" rot="R180"/>
 <pin name="IOL_25A" x="78.74" y="-55.88" length="middle" rot="R180"/>
@@ -15712,7 +15712,7 @@ Source: RS Component / Phycomp</description>
 <pin name="CDONE" x="-15.24" y="-20.32" length="middle" rot="R180"/>
 <pin name="IOB_105_SDO" x="-15.24" y="20.32" length="middle" rot="R180"/>
 <pin name="IOB_108_SS" x="-15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="IOR_115" x="22.86" y="38.1" length="middle"/>
+<pin name="IOR_115A" x="22.86" y="38.1" length="middle"/>
 <pin name="IOB_56" x="-71.12" y="2.54" length="middle"/>
 <pin name="IOB_61" x="-71.12" y="-2.54" length="middle"/>
 <pin name="IOB_71" x="-71.12" y="-10.16" length="middle"/>
@@ -16027,12 +16027,12 @@ Source: &lt;a href="http://www.latticesemi.com/iCE40"&gt; Datasheet &lt;/a&gt;</
 <connect gate="G$1" pin="IOL_9A" pad="D2"/>
 <connect gate="G$1" pin="IOL_9B" pad="D3"/>
 <connect gate="G$1" pin="IOR_114" pad="J11"/>
-<connect gate="G$1" pin="IOR_115" pad="K11"/>
-<connect gate="G$1" pin="IOR_116" pad="H10"/>
-<connect gate="G$1" pin="IOR_117" pad="J10"/>
-<connect gate="G$1" pin="IOR_118" pad="G8"/>
-<connect gate="G$1" pin="IOR_119" pad="H11"/>
-<connect gate="G$1" pin="IOR_120" pad="G10"/>
+<connect gate="G$1" pin="IOR_115A" pad="K11"/>
+<connect gate="G$1" pin="IOR_116B" pad="H10"/>
+<connect gate="G$1" pin="IOR_117A" pad="J10"/>
+<connect gate="G$1" pin="IOR_118B" pad="G8"/>
+<connect gate="G$1" pin="IOR_119A" pad="H11"/>
+<connect gate="G$1" pin="IOR_120B" pad="G10"/>
 <connect gate="G$1" pin="IOR_128" pad="G9"/>
 <connect gate="G$1" pin="IOR_129" pad="G11"/>
 <connect gate="G$1" pin="IOR_136" pad="F10"/>
@@ -16041,8 +16041,8 @@ Source: &lt;a href="http://www.latticesemi.com/iCE40"&gt; Datasheet &lt;/a&gt;</
 <connect gate="G$1" pin="IOR_141_GBIN2" pad="E10"/>
 <connect gate="G$1" pin="IOR_144" pad="E9"/>
 <connect gate="G$1" pin="IOR_146" pad="E8"/>
-<connect gate="G$1" pin="IOR_147" pad="D9"/>
-<connect gate="G$1" pin="IOR_148" pad="E11"/>
+<connect gate="G$1" pin="IOR_147A" pad="D9"/>
+<connect gate="G$1" pin="IOR_148B" pad="E11"/>
 <connect gate="G$1" pin="IOR_152" pad="D11"/>
 <connect gate="G$1" pin="IOR_154" pad="D10"/>
 <connect gate="G$1" pin="IOR_160" pad="C11"/>
@@ -16052,22 +16052,22 @@ Source: &lt;a href="http://www.latticesemi.com/iCE40"&gt; Datasheet &lt;/a&gt;</
 <connect gate="G$1" pin="IOT_172" pad="C9"/>
 <connect gate="G$1" pin="IOT_174" pad="B9"/>
 <connect gate="G$1" pin="IOT_177" pad="B8"/>
-<connect gate="G$1" pin="IOT_178" pad="A9"/>
-<connect gate="G$1" pin="IOT_179" pad="C8"/>
+<connect gate="G$1" pin="IOT_178A" pad="A9"/>
+<connect gate="G$1" pin="IOT_179B" pad="C8"/>
 <connect gate="G$1" pin="IOT_181" pad="D7"/>
-<connect gate="G$1" pin="IOT_190" pad="A8"/>
-<connect gate="G$1" pin="IOT_191" pad="C7"/>
+<connect gate="G$1" pin="IOT_190A" pad="A8"/>
+<connect gate="G$1" pin="IOT_191B" pad="C7"/>
 <connect gate="G$1" pin="IOT_192" pad="A7"/>
 <connect gate="G$1" pin="IOT_198_GBIN0" pad="B6"/>
-<connect gate="G$1" pin="IOT_206" pad="A6"/>
-<connect gate="G$1" pin="IOT_207" pad="A5"/>
+<connect gate="G$1" pin="IOT_206A" pad="A6"/>
+<connect gate="G$1" pin="IOT_207B" pad="A5"/>
 <connect gate="G$1" pin="IOT_208" pad="B5"/>
 <connect gate="G$1" pin="IOT_211" pad="A4"/>
 <connect gate="G$1" pin="IOT_212" pad="D5"/>
 <connect gate="G$1" pin="IOT_219" pad="B4"/>
 <connect gate="G$1" pin="IOT_221" pad="B3"/>
-<connect gate="G$1" pin="IOT_222" pad="A2"/>
-<connect gate="G$1" pin="IOT_223" pad="A3"/>
+<connect gate="G$1" pin="IOT_222A" pad="A2"/>
+<connect gate="G$1" pin="IOT_223B" pad="A3"/>
 <connect gate="G$1" pin="IOT_225" pad="A1"/>
 <connect gate="G$1" pin="VCCIO_0" pad="D6"/>
 <connect gate="G$1" pin="VCCIO_1" pad="F8"/>
@@ -19696,9 +19696,9 @@ Solder type</description>
 <text x="190.5" y="129.54" size="1.778" layer="91">2xint?</text>
 </plain>
 <instances>
-<instance part="RN1" gate="C" x="38.1" y="5.08"/>
-<instance part="RN1" gate="B" x="38.1" y="-2.54"/>
-<instance part="RN1" gate="A" x="38.1" y="12.7"/>
+<instance part="RN1" gate="A" x="38.1" y="5.08"/>
+<instance part="RN1" gate="C" x="38.1" y="-2.54"/>
+<instance part="RN1" gate="B" x="38.1" y="12.7"/>
 <instance part="C4" gate="G$1" x="238.76" y="27.94" smashed="yes">
 <attribute name="NAME" x="240.284" y="28.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="240.284" y="23.241" size="1.778" layer="96"/>
@@ -20924,7 +20924,7 @@ Solder type</description>
 <net name="DONE" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="CDONE"/>
-<wire x1="-33.02" y1="142.24" x2="-25.4" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="142.24" x2="-27.94" y2="142.24" width="0.1524" layer="91"/>
 <label x="-33.02" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -21042,19 +21042,19 @@ Solder type</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="RN1" gate="C" pin="1"/>
+<pinref part="RN1" gate="A" pin="1"/>
 <pinref part="U$17" gate="G$1" pin="GC"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="RN1" gate="B" pin="1"/>
+<pinref part="RN1" gate="C" pin="1"/>
 <pinref part="U$17" gate="G$1" pin="RC"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="RN1" gate="A" pin="1"/>
+<pinref part="RN1" gate="B" pin="1"/>
 <pinref part="U$17" gate="G$1" pin="BC"/>
 </segment>
 </net>
@@ -21072,11 +21072,6 @@ Solder type</description>
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_115"/>
-<wire x1="5.08" y1="200.66" x2="0" y2="200.66" width="0.1524" layer="91"/>
-<label x="-2.54" y="200.66" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="RN3" gate="C" pin="2"/>
 <wire x1="43.18" y1="-12.7" x2="45.72" y2="-12.7" width="0.1524" layer="91"/>
 <label x="43.18" y="-12.7" size="1.778" layer="95"/>
@@ -21085,6 +21080,11 @@ Solder type</description>
 <wire x1="182.88" y1="170.18" x2="187.96" y2="170.18" width="0.1524" layer="91"/>
 <label x="185.42" y="170.18" size="1.778" layer="95"/>
 <pinref part="QD6" gate="G$1" pin="PA9"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOR_114"/>
+<wire x1="5.08" y1="203.2" x2="0" y2="203.2" width="0.1524" layer="91"/>
+<label x="-2.54" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -21100,7 +21100,7 @@ Solder type</description>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IOB_82_GBIN4"/>
-<wire x1="-33.02" y1="165.1" x2="-30.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="165.1" x2="-27.94" y2="165.1" width="0.1524" layer="91"/>
 <label x="-33.02" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -21613,9 +21613,9 @@ Solder type</description>
 <label x="-106.68" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_172"/>
-<wire x1="5.08" y1="165.1" x2="-2.54" y2="165.1" width="0.1524" layer="91"/>
-<label x="-2.54" y="165.1" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_141_GBIN2"/>
+<wire x1="60.96" y1="200.66" x2="66.04" y2="200.66" width="0.1524" layer="91"/>
+<label x="63.5" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF9" class="0">
@@ -21625,9 +21625,9 @@ Solder type</description>
 <label x="-66.04" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_170"/>
-<wire x1="5.08" y1="167.64" x2="-2.54" y2="167.64" width="0.1524" layer="91"/>
-<label x="-2.54" y="167.64" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_144"/>
+<wire x1="60.96" y1="198.12" x2="66.04" y2="198.12" width="0.1524" layer="91"/>
+<label x="63.5" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF8" class="0">
@@ -21637,9 +21637,9 @@ Solder type</description>
 <label x="-106.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_168"/>
-<wire x1="5.08" y1="170.18" x2="-2.54" y2="170.18" width="0.1524" layer="91"/>
-<label x="-2.54" y="170.18" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_140_GBIN3"/>
+<wire x1="60.96" y1="203.2" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
+<label x="63.5" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF7" class="0">
@@ -21649,9 +21649,9 @@ Solder type</description>
 <label x="-66.04" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_161"/>
-<wire x1="60.96" y1="180.34" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
-<label x="63.5" y="180.34" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_223B"/>
+<wire x1="60.96" y1="147.32" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
+<label x="63.5" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF6" class="0">
@@ -21661,9 +21661,9 @@ Solder type</description>
 <label x="-106.68" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_160"/>
-<wire x1="60.96" y1="182.88" x2="66.04" y2="182.88" width="0.1524" layer="91"/>
-<label x="63.5" y="182.88" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_222A"/>
+<wire x1="60.96" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
+<label x="63.5" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF5" class="0">
@@ -21673,9 +21673,9 @@ Solder type</description>
 <label x="-66.04" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_154"/>
-<wire x1="60.96" y1="185.42" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
-<label x="63.5" y="185.42" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_207B"/>
+<wire x1="60.96" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
+<label x="63.5" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF4" class="0">
@@ -21685,9 +21685,9 @@ Solder type</description>
 <label x="-106.68" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_152"/>
-<wire x1="60.96" y1="187.96" x2="66.04" y2="187.96" width="0.1524" layer="91"/>
-<label x="63.5" y="187.96" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_206A"/>
+<wire x1="60.96" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
+<label x="63.5" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF3" class="0">
@@ -21697,9 +21697,9 @@ Solder type</description>
 <label x="-66.04" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_144"/>
-<wire x1="60.96" y1="198.12" x2="66.04" y2="198.12" width="0.1524" layer="91"/>
-<label x="63.5" y="198.12" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_191B"/>
+<wire x1="5.08" y1="147.32" x2="-2.54" y2="147.32" width="0.1524" layer="91"/>
+<label x="-2.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF2" class="0">
@@ -21709,9 +21709,9 @@ Solder type</description>
 <label x="-106.68" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_147"/>
-<wire x1="60.96" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
-<label x="63.5" y="193.04" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_190A"/>
+<wire x1="5.08" y1="149.86" x2="-2.54" y2="149.86" width="0.1524" layer="91"/>
+<label x="-2.54" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF1" class="0">
@@ -21721,9 +21721,9 @@ Solder type</description>
 <label x="-66.04" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_146"/>
-<wire x1="60.96" y1="195.58" x2="66.04" y2="195.58" width="0.1524" layer="91"/>
-<label x="63.5" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_179B"/>
+<wire x1="5.08" y1="154.94" x2="-2.54" y2="154.94" width="0.1524" layer="91"/>
+<label x="-2.54" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF0" class="0">
@@ -21733,9 +21733,9 @@ Solder type</description>
 <label x="-106.68" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_148"/>
-<wire x1="60.96" y1="190.5" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
-<label x="63.5" y="190.5" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_178A"/>
+<wire x1="5.08" y1="157.48" x2="-2.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="-2.54" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG11" class="0">
@@ -21745,9 +21745,9 @@ Solder type</description>
 <label x="-15.24" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_141_GBIN2"/>
-<wire x1="60.96" y1="200.66" x2="66.04" y2="200.66" width="0.1524" layer="91"/>
-<label x="63.5" y="200.66" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_137"/>
+<wire x1="60.96" y1="205.74" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
+<label x="63.5" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TF11" class="0">
@@ -21757,9 +21757,9 @@ Solder type</description>
 <label x="-66.04" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_174"/>
-<label x="-2.54" y="162.56" size="1.778" layer="95"/>
-<wire x1="5.08" y1="162.56" x2="-2.54" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="IOR_146"/>
+<wire x1="60.96" y1="195.58" x2="66.04" y2="195.58" width="0.1524" layer="91"/>
+<label x="63.5" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG8" class="0">
@@ -21769,9 +21769,9 @@ Solder type</description>
 <label x="-55.88" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_136"/>
-<wire x1="5.08" y1="180.34" x2="0" y2="180.34" width="0.1524" layer="91"/>
-<label x="-2.54" y="180.34" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_128"/>
+<wire x1="5.08" y1="185.42" x2="0" y2="185.42" width="0.1524" layer="91"/>
+<label x="-2.54" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG7" class="0">
@@ -21781,9 +21781,9 @@ Solder type</description>
 <label x="-15.24" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_129"/>
-<wire x1="5.08" y1="182.88" x2="0" y2="182.88" width="0.1524" layer="91"/>
-<label x="-2.54" y="182.88" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_148B"/>
+<wire x1="60.96" y1="190.5" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
+<label x="63.5" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG6" class="0">
@@ -21793,9 +21793,9 @@ Solder type</description>
 <label x="-55.88" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_128"/>
-<wire x1="5.08" y1="185.42" x2="0" y2="185.42" width="0.1524" layer="91"/>
-<label x="-2.54" y="185.42" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_147A"/>
+<wire x1="60.96" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
+<label x="63.5" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG5" class="0">
@@ -21805,7 +21805,7 @@ Solder type</description>
 <label x="-15.24" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_120"/>
+<pinref part="IC4" gate="G$1" pin="IOR_120B"/>
 <wire x1="5.08" y1="187.96" x2="0" y2="187.96" width="0.1524" layer="91"/>
 <label x="-2.54" y="187.96" size="1.778" layer="95"/>
 </segment>
@@ -21817,7 +21817,7 @@ Solder type</description>
 <label x="-55.88" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_119"/>
+<pinref part="IC4" gate="G$1" pin="IOR_119A"/>
 <wire x1="5.08" y1="190.5" x2="0" y2="190.5" width="0.1524" layer="91"/>
 <label x="-2.54" y="190.5" size="1.778" layer="95"/>
 </segment>
@@ -21829,7 +21829,7 @@ Solder type</description>
 <label x="-15.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_118"/>
+<pinref part="IC4" gate="G$1" pin="IOR_118B"/>
 <wire x1="5.08" y1="193.04" x2="0" y2="193.04" width="0.1524" layer="91"/>
 <label x="-2.54" y="193.04" size="1.778" layer="95"/>
 </segment>
@@ -21841,9 +21841,9 @@ Solder type</description>
 <label x="-55.88" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_116"/>
-<wire x1="5.08" y1="198.12" x2="0" y2="198.12" width="0.1524" layer="91"/>
-<label x="-2.54" y="198.12" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_117A"/>
+<wire x1="5.08" y1="195.58" x2="0" y2="195.58" width="0.1524" layer="91"/>
+<label x="-2.54" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG0" class="0">
@@ -21853,9 +21853,9 @@ Solder type</description>
 <label x="-55.88" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_117"/>
-<wire x1="5.08" y1="195.58" x2="0" y2="195.58" width="0.1524" layer="91"/>
-<label x="-2.54" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_115A"/>
+<wire x1="5.08" y1="200.66" x2="0" y2="200.66" width="0.1524" layer="91"/>
+<label x="-2.54" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG1" class="0">
@@ -21865,9 +21865,9 @@ Solder type</description>
 <label x="-15.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_114"/>
-<wire x1="5.08" y1="203.2" x2="0" y2="203.2" width="0.1524" layer="91"/>
-<label x="-2.54" y="203.2" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_116B"/>
+<wire x1="5.08" y1="198.12" x2="0" y2="198.12" width="0.1524" layer="91"/>
+<label x="-2.54" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG10" class="0">
@@ -21877,9 +21877,9 @@ Solder type</description>
 <label x="-55.88" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_140_GBIN3"/>
-<wire x1="60.96" y1="203.2" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
-<label x="63.5" y="203.2" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_136"/>
+<wire x1="5.08" y1="180.34" x2="0" y2="180.34" width="0.1524" layer="91"/>
+<label x="-2.54" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TG9" class="0">
@@ -21889,9 +21889,9 @@ Solder type</description>
 <label x="-15.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOR_137"/>
-<wire x1="60.96" y1="205.74" x2="66.04" y2="205.74" width="0.1524" layer="91"/>
-<label x="63.5" y="205.74" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOR_129"/>
+<wire x1="5.08" y1="182.88" x2="0" y2="182.88" width="0.1524" layer="91"/>
+<label x="-2.54" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -22108,14 +22108,14 @@ Solder type</description>
 <pinref part="SV1" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_207"/>
-<wire x1="60.96" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
-<label x="63.5" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-12" pin="1"/>
 <label x="-127" y="5.08" size="1.778" layer="95" rot="MR0"/>
 <wire x1="-134.62" y1="5.08" x2="-127" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_172"/>
+<wire x1="5.08" y1="165.1" x2="-2.54" y2="165.1" width="0.1524" layer="91"/>
+<label x="-2.54" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P9" class="0">
@@ -22125,14 +22125,14 @@ Solder type</description>
 <pinref part="SV1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_192"/>
-<wire x1="5.08" y1="144.78" x2="-2.54" y2="144.78" width="0.1524" layer="91"/>
-<label x="-2.54" y="144.78" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-13" pin="1"/>
 <wire x1="-134.62" y1="2.54" x2="-129.54" y2="2.54" width="0.1524" layer="91"/>
 <label x="-127" y="2.54" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_174"/>
+<label x="-2.54" y="162.56" size="1.778" layer="95"/>
+<wire x1="5.08" y1="162.56" x2="-2.54" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="P7" class="0">
@@ -22142,14 +22142,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_208"/>
-<wire x1="60.96" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
-<label x="63.5" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-11" pin="1"/>
 <wire x1="-134.62" y1="7.62" x2="-129.54" y2="7.62" width="0.1524" layer="91"/>
 <label x="-127" y="7.62" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_177"/>
+<wire x1="5.08" y1="160.02" x2="-2.54" y2="160.02" width="0.1524" layer="91"/>
+<label x="-2.54" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P5" class="0">
@@ -22159,14 +22159,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_212"/>
-<wire x1="60.96" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
-<label x="63.5" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-8" pin="1"/>
 <label x="-127" y="15.24" size="1.778" layer="95" rot="MR0"/>
 <wire x1="-134.62" y1="15.24" x2="-127" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_181"/>
+<wire x1="5.08" y1="152.4" x2="-2.54" y2="152.4" width="0.1524" layer="91"/>
+<label x="-2.54" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P3" class="0">
@@ -22176,14 +22176,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_221"/>
-<wire x1="60.96" y1="152.4" x2="66.04" y2="152.4" width="0.1524" layer="91"/>
-<label x="63.5" y="152.4" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-6" pin="1"/>
 <wire x1="-134.62" y1="20.32" x2="-129.54" y2="20.32" width="0.1524" layer="91"/>
 <label x="-127" y="20.32" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_211"/>
+<wire x1="60.96" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
+<label x="63.5" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P1" class="0">
@@ -22193,14 +22193,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_223"/>
-<wire x1="60.96" y1="147.32" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
-<label x="63.5" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-4" pin="1"/>
 <wire x1="-134.62" y1="25.4" x2="-129.54" y2="25.4" width="0.1524" layer="91"/>
 <label x="-127" y="25.4" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_221"/>
+<wire x1="60.96" y1="152.4" x2="66.04" y2="152.4" width="0.1524" layer="91"/>
+<label x="63.5" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P0" class="0">
@@ -22227,14 +22227,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_222"/>
-<wire x1="60.96" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="63.5" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-5" pin="1"/>
 <wire x1="-134.62" y1="22.86" x2="-129.54" y2="22.86" width="0.1524" layer="91"/>
 <label x="-127" y="22.86" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_219"/>
+<wire x1="60.96" y1="154.94" x2="66.04" y2="154.94" width="0.1524" layer="91"/>
+<label x="63.5" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P4" class="0">
@@ -22244,14 +22244,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_219"/>
-<wire x1="60.96" y1="154.94" x2="66.04" y2="154.94" width="0.1524" layer="91"/>
-<label x="63.5" y="154.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-7" pin="1"/>
 <wire x1="-134.62" y1="17.78" x2="-129.54" y2="17.78" width="0.1524" layer="91"/>
 <label x="-127" y="17.78" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_212"/>
+<wire x1="60.96" y1="157.48" x2="66.04" y2="157.48" width="0.1524" layer="91"/>
+<label x="63.5" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P6" class="0">
@@ -22261,14 +22261,14 @@ Solder type</description>
 <pinref part="SV2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_211"/>
-<wire x1="60.96" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
-<label x="63.5" y="160.02" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-9" pin="1"/>
 <wire x1="-134.62" y1="12.7" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
 <label x="-127" y="12.7" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_208"/>
+<wire x1="60.96" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
+<label x="63.5" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P11" class="0">
@@ -22278,14 +22278,14 @@ Solder type</description>
 <pinref part="SV1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_190"/>
-<wire x1="5.08" y1="149.86" x2="-2.54" y2="149.86" width="0.1524" layer="91"/>
-<label x="-2.54" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-18" pin="1"/>
 <wire x1="-134.62" y1="-10.16" x2="-129.54" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-127" y="-10.16" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_168"/>
+<wire x1="5.08" y1="170.18" x2="-2.54" y2="170.18" width="0.1524" layer="91"/>
+<label x="-2.54" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P10" class="0">
@@ -22295,14 +22295,14 @@ Solder type</description>
 <pinref part="SV1" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_191"/>
-<wire x1="5.08" y1="147.32" x2="-2.54" y2="147.32" width="0.1524" layer="91"/>
-<label x="-2.54" y="147.32" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CAM1" gate="-16" pin="1"/>
 <wire x1="-134.62" y1="-5.08" x2="-129.54" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-127" y="-5.08" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOT_170"/>
+<wire x1="5.08" y1="167.64" x2="-2.54" y2="167.64" width="0.1524" layer="91"/>
+<label x="-2.54" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QD4" class="0">
@@ -22360,11 +22360,6 @@ Solder type</description>
 <pinref part="SV1" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_181"/>
-<wire x1="5.08" y1="152.4" x2="-2.54" y2="152.4" width="0.1524" layer="91"/>
-<label x="-2.54" y="152.4" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MEZZANINE" gate="G$1" pin="P1"/>
 <wire x1="17.78" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
 <label x="10.16" y="83.82" size="1.778" layer="95"/>
@@ -22374,17 +22369,17 @@ Solder type</description>
 <wire x1="-134.62" y1="88.9" x2="-124.46" y2="88.9" width="0.1524" layer="91"/>
 <label x="-124.46" y="88.9" size="1.778" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOR_161"/>
+<wire x1="60.96" y1="180.34" x2="66.04" y2="180.34" width="0.1524" layer="91"/>
+<label x="63.5" y="180.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P13" class="0">
 <segment>
 <wire x1="-25.4" y1="-12.7" x2="-22.86" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-22.86" y="-12.7" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="IOT_179"/>
-<wire x1="5.08" y1="154.94" x2="-2.54" y2="154.94" width="0.1524" layer="91"/>
-<label x="-2.54" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MEZZANINE" gate="G$1" pin="P8"/>
@@ -22396,17 +22391,17 @@ Solder type</description>
 <wire x1="-134.62" y1="86.36" x2="-124.46" y2="86.36" width="0.1524" layer="91"/>
 <label x="-124.46" y="86.36" size="1.778" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOR_160"/>
+<wire x1="60.96" y1="182.88" x2="66.04" y2="182.88" width="0.1524" layer="91"/>
+<label x="63.5" y="182.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P14" class="0">
 <segment>
 <wire x1="-40.64" y1="-10.16" x2="-43.18" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-48.26" y="-10.16" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="IOT_178"/>
-<wire x1="5.08" y1="157.48" x2="-2.54" y2="157.48" width="0.1524" layer="91"/>
-<label x="-2.54" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MEZZANINE" gate="G$1" pin="P2"/>
@@ -22418,17 +22413,17 @@ Solder type</description>
 <wire x1="-134.62" y1="83.82" x2="-124.46" y2="83.82" width="0.1524" layer="91"/>
 <label x="-124.46" y="83.82" size="1.778" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOR_154"/>
+<wire x1="60.96" y1="185.42" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
+<label x="63.5" y="185.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P15" class="0">
 <segment>
 <wire x1="-25.4" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-22.86" y="-10.16" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="IOT_177"/>
-<wire x1="5.08" y1="160.02" x2="-2.54" y2="160.02" width="0.1524" layer="91"/>
-<label x="-2.54" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MEZZANINE" gate="G$1" pin="P7"/>
@@ -22439,6 +22434,11 @@ Solder type</description>
 <pinref part="LCD" gate="-12" pin="1"/>
 <wire x1="-134.62" y1="78.74" x2="-124.46" y2="78.74" width="0.1524" layer="91"/>
 <label x="-124.46" y="78.74" size="1.778" layer="95" rot="MR0"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="IOR_152"/>
+<wire x1="60.96" y1="187.96" x2="66.04" y2="187.96" width="0.1524" layer="91"/>
+<label x="63.5" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!SS" class="0">
@@ -22582,7 +22582,7 @@ Solder type</description>
 </net>
 <net name="R/SCL" class="0">
 <segment>
-<pinref part="RN1" gate="B" pin="2"/>
+<pinref part="RN1" gate="C" pin="2"/>
 <wire x1="43.18" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <label x="43.18" y="-2.54" size="1.778" layer="95"/>
 </segment>
@@ -22599,7 +22599,7 @@ Solder type</description>
 </net>
 <net name="G/SDA" class="0">
 <segment>
-<pinref part="RN1" gate="C" pin="2"/>
+<pinref part="RN1" gate="A" pin="2"/>
 <wire x1="43.18" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
 <label x="43.18" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -22609,9 +22609,9 @@ Solder type</description>
 <label x="-127" y="-20.32" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="IOT_206"/>
-<wire x1="60.96" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
-<label x="63.5" y="167.64" size="1.778" layer="95"/>
+<pinref part="IC4" gate="G$1" pin="IOT_192"/>
+<wire x1="5.08" y1="144.78" x2="-2.54" y2="144.78" width="0.1524" layer="91"/>
+<label x="-2.54" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B/EN" class="0">
@@ -22621,7 +22621,7 @@ Solder type</description>
 <label x="63.5" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RN1" gate="A" pin="2"/>
+<pinref part="RN1" gate="B" pin="2"/>
 <wire x1="43.18" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <label x="43.18" y="12.7" size="1.778" layer="95"/>
 </segment>
