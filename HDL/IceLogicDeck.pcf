@@ -1,0 +1,113 @@
+set_io clk L5
+
+# Tile 1
+set_io -nowarn tile1[0] B1
+set_io -nowarn  tile1[1] B2
+set_io -nowarn  tile1[2] C4
+set_io -nowarn  tile1[3] C3
+set_io -nowarn  tile1[4] C2
+set_io -nowarn  tile1[5] C1
+set_io -nowarn  tile1[6] E1
+set_io -nowarn  tile1[7] D1
+set_io -nowarn  tile1[8] D2
+set_io -nowarn  tile1[9] D3
+set_io -nowarn  tile1[10] E2
+set_io -nowarn  tile1[11] E3
+
+# Tile 2 (super tile)
+set_io tile2[0] D10 # p14
+set_io tile2[1] D11 # p15
+set_io tile2[2] B11 # p12
+set_io tile2[3] C11 # p13
+set_io tile2[4] A10 # p10
+set_io tile2[5] A11 # p11
+set_io tile2[6] C9 # p9
+set_io tile2[7] B9 # p8
+set_io tile2[8] A7 # p7
+set_io tile2[9] B8 # p6
+set_io tile2[10] D5 # p5
+set_io tile2[11] B5 # p4
+set_io -nowarn  sda B4 # p3
+set_io -nowarn  scl A4 # p2
+set_io -nowarn  rsv A1 # p1
+set_io -nowarn  tr B3 # p0
+
+
+# Tile 3
+set_io -nowarn  tile3[0] A9
+set_io -nowarn  tile3[1] C8
+set_io -nowarn  tile3[2] A8
+set_io -nowarn  tile3[3] C7
+set_io -nowarn  tile3[4] A6
+set_io -nowarn  tile3[5] A5
+set_io -nowarn  tile3[6] A2
+set_io -nowarn  tile3[7] A3
+set_io -nowarn  tile3[8] F11
+set_io -nowarn  tile3[9] E9
+set_io -nowarn  tile3[10] E10
+set_io -nowarn  tile3[11] E8
+
+# Tile 4
+set_io -nowarn  tile4[0] F1
+set_io -nowarn  tile4[1] F2
+set_io -nowarn  tile4[2] F4
+set_io -nowarn  tile4[3] F3
+set_io -nowarn  tile4[4] G1
+set_io -nowarn  tile4[5] G2
+set_io -nowarn  tile4[6] G3
+set_io -nowarn  tile4[7] H3
+set_io -nowarn  tile4[8] H1
+set_io -nowarn  tile4[9] H2
+set_io -nowarn  tile4[10] J1
+set_io -nowarn  tile4[11] K1
+
+# Tile 5
+set_io -nowarn  tile5[0] K11
+set_io -nowarn  tile5[1] H10
+set_io -nowarn  tile5[2] J10
+set_io -nowarn  tile5[3] G8
+set_io -nowarn  tile5[4] H11
+set_io -nowarn  tile5[5] G10
+set_io -nowarn  tile5[6] D9
+set_io -nowarn  tile5[7] E11
+set_io -nowarn  tile5[8] G9
+set_io -nowarn  tile5[9] G11
+set_io -nowarn  tile5[10] F10
+set_io -nowarn  tile5[11] F9
+
+set_io -nowarn  tx K2
+set_io -nowarn  rx J2
+
+# HyperRam
+set_io -nowarn  dq[0] K3
+set_io -nowarn  dq[1] K4
+set_io -nowarn  dq[2] L1
+set_io -nowarn  dq[3] K5
+set_io -nowarn  dq[4] J3
+set_io -nowarn  dq[5] L3
+set_io -nowarn  dq[6] L4
+set_io -nowarn  dq[7] J5
+set_io -nowarn  dqk L2
+set_io -nowarn  dqr J4
+set_io -nowarn  ds0 K6
+
+# QsPie
+set_io -nowarn  qd[0] J8
+set_io -nowarn  qd[1] H7
+set_io -nowarn  qd[2] K7
+set_io -nowarn  qd[3] L8
+set_io -nowarn  qck H9
+set_io -nowarn  qss L7
+set_io -nowarn  qdr J7
+
+# SPI
+set_io -nowarn  si K9
+set_io -nowarn  so J9
+set_io -nowarn  sck L10
+set_io -nowarn  ss L7
+
+# Mezzanine
+set_io -nowarn  mt0 J11 # lc
+set_io -nowarn  g_mt1 D7 # ld
+set_io -nowarn  b_ws B7 # nls
+set_io -nowarn  r_ds B6 # lc/d
