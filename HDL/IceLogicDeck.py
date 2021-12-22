@@ -2,17 +2,17 @@ import os
 import subprocess
 
 from amaranth.build import *
-from amaranth.vendor.lattice_ice40 import *
 from amaranth_boards.resources import *
+from amaranth.vendor.lattice_ice40 import LatticeICE40Platform
 
 __all__ = ["IceLogicDeckPlatform"]
 
-# PMOD pinout primnitives for building modular connectors
-LED =" B7"
+# Pinout definitions
+LED =" D10" #B7
 UART = " J2 K2" #Rx,Tx
 SPI =" K9 J9 L10 L7" #si,so, sck,ss
 USER = " J11 B6 D7 B7"
-SUPER = " B4 A4 A1 B3"
+SUPER = " B4 A4 A1 B3 _ _ _ _"
 GENPINS = " - - - - - - - -"
 QSPIE = " J8 H7 K7 L8 H9 L7 J7" # qdo,qd1,qd2,qd3,qck,qss,qdr
 TILE1 = " B1 B2 C4 C3 C2 C1 E1 D1 D2 D3 E2 E3"
@@ -24,7 +24,7 @@ MEZZA = UART + " - - - - - - - - - - - - - - - - - - - - - -"
 MEZZB = USER + " - - - - - - - - - - - - - - - - - - - -"
 
 # IceLogicDeck : https://github.com/folknology/IceLogicDeck
-class IceLogicDeckPlatform():
+class IceLogicDeckPlatform(LatticeICE40Platform):
     device = "iCE40HX4K"
     package = "BG121"
     default_clk = "clk25"
@@ -33,45 +33,45 @@ class IceLogicDeckPlatform():
                  Clock(25e6), Attrs(GLOBAL=True, IO_STANDARD="SB_LVCMOS")
                  ),
         # led
-        Resource("led", 0, Pins(LED, dir="o"),
+        Resource("led", 0, Pins(LED, dir="o", invert=True),
                  Attrs(IO_STANDARD="SB_LVCMOS")
 
                  ),
         # SPI
         Resource("sck", 0, Pins("L10", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("mosi", 0, Pins("J9", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("cs", 0, Pins("L7", dir="0"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("miso", 0, Pins("K9", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("copi", 0, Pins("J9", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("cs_n", 0, Pins("L7", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("cipo", 0, Pins("K9", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
         # QSPIE
-        Resource("qd0", 0, Pins("J8"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qd1", 0, Pins("H7"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qd2", 0, Pins("K7"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qd3", 0, Pins("l8"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qd0", 0, Pins("J8",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qd1", 0, Pins("H7",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qd2", 0, Pins("K7",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qd3", 0, Pins("l8",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qck", 0, Pins("H9", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qss", 0, Pins("L7", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qdr", 0, Pins("J7", dir="0"), Attrs(IO_STANDARD="SB_LVCMOS"))
+        Resource("qdr", 0, Pins("J7", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
         # Uart
         UARTResource(0,
-                     rx="J2", tx="K2", rts="91", cts="94",
+                     rx="J2", tx="K2",
                      attrs=Attrs(IO_STANDARD="SB_LVCMOS", PULLUP=1),
                      role="dce"
                      ),
         *SPIFlashResources(0,
                            cs_n="L7", clk="L10", copi="J9", cipo="K9",
                            attrs=Attrs(IO_STANDARD="SB_LVCMOS")
-                           ),
+                           )
         #Hyperram ?
     ]
     connectors  = [
         # Tile connectors
-        Connector("tile", 0, TILE1 + GENPINS),  #
-        Connector("tile", 1, TILE2 + SUPER),  #
-        Connector("tile", 2, TILE3 + GENPINS),  #
-        Connector("tile", 3, TILE4 + GENPINS),  #
-        Connector("tile", 4, TILE5 + GENPINS),  #
+        Connector("tile", 1, TILE1 + GENPINS),  #
+        Connector("tile", 2, TILE2 + SUPER),  #
+        Connector("tile", 3, TILE3 + GENPINS),  #
+        Connector("tile", 4, TILE4 + GENPINS),  #
+        Connector("tile", 5, TILE5 + GENPINS),  #
         # Mezzanine Connectors
-        Connector("mez", 4, MEZZA),  #
-        Connector("mez", 4, MEZZB),  #
+        Connector("mez", 0, MEZZA),  #
+        Connector("mez", 1, MEZZB),  #
     ]
 
     def toolchain_program(self, products, name, **kwargs):
@@ -82,5 +82,6 @@ class IceLogicDeckPlatform():
 
 
 if __name__ == "__main__":
-    from .test.blinky import *
+    #from .test.blinky import *
+    from amaranth_boards.test.blinky import *
     IceLogicDeckPlatform().build(Blinky(), do_program=True)
