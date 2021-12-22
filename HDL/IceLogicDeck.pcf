@@ -75,9 +75,6 @@ set_io -nowarn  tile5[9] G11
 set_io -nowarn  tile5[10] F10
 set_io -nowarn  tile5[11] F9
 
-set_io -nowarn  tx K2
-set_io -nowarn  rx J2
-
 # HyperRam
 set_io -nowarn  dq[0] K3
 set_io -nowarn  dq[1] K4
@@ -105,6 +102,10 @@ set_io -nowarn  si K9
 set_io -nowarn  so J9
 set_io -nowarn  sck L10
 set_io -nowarn  ss L7
+
+# Uart
+set_io -nowarn  tx K2
+set_io -nowarn  rx J2
 
 # Mezzanine
 set_io -nowarn  mt0 J11 # lc
