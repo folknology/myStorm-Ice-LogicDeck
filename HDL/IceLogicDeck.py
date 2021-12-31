@@ -20,7 +20,7 @@ TILE2 = " D10 D11 B11 C11 A10 A11 C9 B9 A7 B8 D5 B5"
 TILE3 = " A9 C8 A8 C7 A6 A5 A2 A3 F11 E9 E10 E8"
 TILE4 = " F1 F2 F4 F3 G1 G2 G3 H3 H1 H2 J1 K1"
 TILE5 = " K11 H10 J10 G8 H11 G10 D9 E11 G9 G11 F10 F9"
-MEZZA = UART + " - - - - - - - - - - - - - - - - - - - - - -"
+MEZZA = UART + " L1 J3 L2 K3 L3 J4 K4 L4 J5 K5 K6 - - - - - - - - - - -" # Rx,Tx, DQ2,DQ4,DQK,DQ0,DQ5,DQR,DQ1,DQ6,DQ7,DQ3,DS0
 MEZZB = USER + " - - - - - - - - - - - - - - - - - - - -"
 
 # IceLogicDeck : https://github.com/folknology/IceLogicDeck
