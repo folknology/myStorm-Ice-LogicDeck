@@ -1,21 +1,22 @@
+from typing import List, Dict
+
 from amaranth import *
 from amaranth.build import *
 from IceLogicDeck import *
 from seven_seg import SevenSegController
 
 TILE = 1
+PINMAP = {"a": "6", "b": "8", "c": "12", "d": "10", "e": "7", "f": "5", "g": "4", "dp": "9", "ca": "3 2 1"}
+
+subSignals = [
+    Subsignal(signal,
+              Pins(pin, invert=True, dir="o", conn=("tile", TILE)),
+              Attrs(IO_STANDARD="SB_LVCMOS")
+              ) for signal, pin in PINMAP.items()
+]
 
 seven_seg_tile = [
-    Resource("seven_seg", 0,
-             Subsignal("a",  Pins("6", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("b",  Pins("8", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("c",  Pins("12", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("d",  Pins("10", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("e",  Pins("7", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("f",  Pins("5", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("g",  Pins("4", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("dp", Pins("9", invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")),
-             Subsignal("ca", Pins("3 2 1",  invert=True, dir="o", conn=("tile",TILE)), Attrs(IO_STANDARD="SB_LVCMOS")))
+    Resource("seven_seg", 0, *subSignals)
 ]
 
 
