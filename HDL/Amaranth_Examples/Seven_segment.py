@@ -1,35 +1,20 @@
-from typing import List, Dict
-
 from amaranth import *
-from amaranth.build import *
 from IceLogicDeck import *
-from seven_seg import SevenSegController
+from Tiles.seven_seg_tile import SevenSegController,tile_resources
 
 TILE = 1
-PINMAP = {"a": "6", "b": "8", "c": "12", "d": "10", "e": "7", "f": "5", "g": "4", "dp": "9", "ca": "3 2 1"}
-
-subSignals = [
-    Subsignal(signal,
-              Pins(pin, invert=True, dir="o", conn=("tile", TILE)),
-              Attrs(IO_STANDARD="SB_LVCMOS")
-              ) for signal, pin in PINMAP.items()
-]
-
-seven_seg_tile = [
-    Resource("seven_seg", 0, *subSignals)
-]
 
 
 class SevenSegTest(Elaboratable):
     def elaborate(self, platform):
+        # Add 7-segment controller
+        m = Module()
+        m.submodules.seven = seven = SevenSegController()
+
         # Get pins
         seg_pins = platform.request("seven_seg")
         leds7 = Cat([seg_pins.a, seg_pins.b, seg_pins.c, seg_pins.d,
                      seg_pins.e, seg_pins.f, seg_pins.g])
-
-        # Add 7-segment controller
-        m = Module()
-        m.submodules.seven = seven = SevenSegController()
 
         # Timer
         timer = Signal(40)
@@ -53,5 +38,5 @@ class SevenSegTest(Elaboratable):
 
 if __name__ == "__main__":
     platform = IceLogicDeckPlatform()
-    platform.add_resources(seven_seg_tile)
+    platform.add_resources(tile_resources(TILE))
     platform.build(SevenSegTest(), do_program=True)
