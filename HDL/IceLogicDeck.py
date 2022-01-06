@@ -30,7 +30,7 @@ class IceLogicDeckPlatform(LatticeICE40Platform):
     default_clk = "clk25"
     resources = [
         Resource("clk25", 0, Pins("L5", dir="i"),
-                 Clock(25e6), Attrs(GLOBAL=True, IO_STANDARD="SB_LVCMOS")
+                 Clock(16e6), Attrs(GLOBAL=True, IO_STANDARD="SB_LVCMOS")
                  ),
         # led
         Resource("led", 0, Pins(LED, dir="o", invert=True),
