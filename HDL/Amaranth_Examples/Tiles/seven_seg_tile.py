@@ -14,7 +14,7 @@ def tile_resources(tile: int) -> List:
                   ) for signal, pin in PINMAP.items()
     ]
 
-    return [Resource("seven_seg", 0, *signals)]
+    return [Resource("seven_seg_tile", 0, *signals)]
 
 
 class SevenSegController(Elaboratable):

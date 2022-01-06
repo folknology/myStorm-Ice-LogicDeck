@@ -1,11 +1,16 @@
+# Tiles 
+
+## Led test example
+We start with a standard tile resource abstraction to work with a protoboard that I have added 12 LEDS t0. We then run some basic Amaranth python HDL to exercise the leds
+
+```python
 from amaranth import *
 from amaranth.build import *
 from IceLogicDeck import *
 
 leds12_tile = [
     Resource("leds12", 0,
-
-            Subsignal("leds", Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir="o", conn=("tile", 3)), Attrs(IO_STANDARD="SB_LVCMOS")))
+            Subsignal("leds", Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir="o", conn=("tile",2)), Attrs(IO_STANDARD="SB_LVCMOS")))
 ]
 
 class LEDTileTest(Elaboratable):
@@ -23,3 +28,4 @@ if __name__ == "__main__":
     platform = IceLogicDeckPlatform()
     platform.add_resources(leds12_tile)
     platform.build(LEDTileTest(), do_program=True)
+```

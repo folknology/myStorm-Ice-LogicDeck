@@ -1,18 +1,18 @@
 from amaranth import *
 from IceLogicDeck import *
-from Tiles.seven_seg_tile import SevenSegController,tile_resources
+from Tiles.seven_seg_tile import SevenSegController, tile_resources
 
 TILE = 1
 
 
-class SevenSegTest(Elaboratable):
+class SevenSegExample(Elaboratable):
     def elaborate(self, platform):
         # Add 7-segment controller
         m = Module()
         m.submodules.seven = seven = SevenSegController()
 
         # Get pins
-        seg_pins = platform.request("seven_seg")
+        seg_pins = platform.request("seven_seg_tile")
         leds7 = Cat([seg_pins.a, seg_pins.b, seg_pins.c, seg_pins.d,
                      seg_pins.e, seg_pins.f, seg_pins.g])
 
@@ -39,4 +39,4 @@ class SevenSegTest(Elaboratable):
 if __name__ == "__main__":
     platform = IceLogicDeckPlatform()
     platform.add_resources(tile_resources(TILE))
-    platform.build(SevenSegTest(), do_program=True)
+    platform.build(SevenSegExample(), do_program=True)
