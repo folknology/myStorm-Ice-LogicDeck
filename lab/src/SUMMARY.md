@@ -1,9 +1,20 @@
-# Summary
+# Amaranth myStorm Book
 - [Introduction](README.md)
-- [Tiles](./Tiles.md)
-  - [Seven Segment](./Seven_Segment.md)
-  - [Audio & Video](./AV.md)
-    - [Audio](./audio.md)]
-    - [Video](./video.md)
+- [Setup](setup.md)
+  - [Hardware](hardware.md)
+    - [DFU](./dfu_util.md)
+    - [USB-CDC](./usbcdc.md)
+    - [Power Delivery](./usbpd.md)
+  - [Tools](tools.md)
+    - [Yosys](./yosys.md)
+    - [Amaranth](./amaranth.md)
+    - [BlackCrab](./blackcrab.md)
+  - [Tiles](./Tiles.md)
+    - [Blinky](./blinky.md)
+    - [Mezzanine](./mezzanine.md)
+    - [Seven Segment](./Seven_Segment.md)
+    - [Audio & Video](./AV.md)
+      - [Audio](./audio.md)]
+      - [Video](./video.md)
 - [Reference](./refernce.md)
   - [PLL](./pll.md)

@@ -8,7 +8,7 @@ from amaranth.vendor.lattice_ice40 import LatticeICE40Platform
 __all__ = ["IceLogicDeckPlatform"]
 
 # Pinout definitions
-LED =" D10" #B7
+LED =" B7" #B7
 UART = " J2 K2" #Rx,Tx
 SPI =" K9 J9 L10 L7" #si,so, sck,ss
 USER = " J11 B6 D7 B7"
@@ -21,7 +21,7 @@ TILE3 = " A9 C8 A8 C7 A6 A5 A2 A3 F11 E9 E10 E8"
 TILE4 = " F1 F2 F4 F3 G1 G2 G3 H3 H1 H2 J1 K1"
 TILE5 = " K11 H10 J10 G8 H11 G10 D9 E11 G9 G11 F10 F9"
 MEZZA = UART + " L1 J3 L2 K3 L3 J4 K4 L4 J5 K5 K6 - - - - - - - - - - -" # Rx,Tx, DQ2,DQ4,DQK,DQ0,DQ5,DQR,DQ1,DQ6,DQ7,DQ3,DS0
-MEZZB = USER + " - - - - - - - - - - - - - - - - - - - -"
+MEZZB = USER + " L10 - J9 K9 - - - - - - - - - - - - - - - - -"
 
 # IceLogicDeck : https://github.com/folknology/IceLogicDeck
 class IceLogicDeckPlatform(LatticeICE40Platform):
@@ -46,10 +46,10 @@ class IceLogicDeckPlatform(LatticeICE40Platform):
         Resource("qd0", 0, Pins("J8",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qd1", 0, Pins("H7",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qd2", 0, Pins("K7",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qd3", 0, Pins("l8",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qd3", 0, Pins("L8",  dir="io"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qck", 0, Pins("H9", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
         Resource("qss", 0, Pins("L7", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
-        Resource("qdr", 0, Pins("J7", dir="o"), Attrs(IO_STANDARD="SB_LVCMOS")),
+        Resource("qdr", 0, Pins("J7", dir="i"), Attrs(IO_STANDARD="SB_LVCMOS")),
         # Uart
         UARTResource(0,
                      rx="J2", tx="K2",

@@ -42,9 +42,7 @@ class AVExample(Elaboratable):
         # Create test pattern
         m.submodules.pattern = pattern = VGATestPattern(vga)
         # enable the clock and test signal
-        m.d.comb += [
-            vga.i_clk_en.eq(1),
-        ]
+        m.d.comb += vga.i_clk_en.eq(1)
         # Audio waveform generator
         m.submodules.sqw = sqw = SquareWave()
         # Grab our VGA Tile resource
