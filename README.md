@@ -11,8 +11,7 @@ This forms a modular, heterogeneous embedded development system, it is very much
 - [Hardware sources](https://github.com/folknology/myStorm-Ice-LogicDeck/tree/main/Hardware)
 - [Firmware sources](https://github.com/folknology/BlackCrab)
 - [Examples & board support](https://github.com/folknology/myStorm-Ice-LogicDeck/tree/main/HDL)
-- [Python based HDL - Amaranth](https://github.com/amaranth-lang/amaranth-lang.github.io)
-- [FPGA Synthesis, PNR and formal - Yosys](https://github.com/YosysHQ/yosys)
+- [FPGA Synthesis, PNR and formal - Yosys OSS cad suite](https://github.com/YosysHQ/oss-cad-suite-build)
 - [Simulation - Verilator](https://github.com/verilator/verilator)
 
 ### Further information
