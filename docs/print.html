@@ -8,7 +8,7 @@
 
 
         <!-- Custom HTML head -->
-
+        
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,7 +90,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -143,8 +143,11 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lab-notes---introductions"><a class="header" href="#lab-notes---introductions">LAb Notes - IntroductionS</a></h1>
+                        <h1 id="lab-notes---introductions"><a class="header" href="#lab-notes---introductions">Lab Notes - Introductions</a></h1>
+<p>The documentation is currently uihder constriuction and is being developed along with a <a href="https://www.twitch.tv/folknology">live</a> streaming <a href="https://www.youtube.com/playlist?list=PLXS9jyX9czzqn4HU2mEmoEFxpgIv1Dvy7">narrative</a> and is very much a work in progress, you can already find some of the interesting stuff in the examples section.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="setup"><a class="header" href="#setup">Setup</a></h1>
+<p><a href="https://github.com/folknology/myStorm-Ice-LogicDeck">Ice LogicDeck setup</a>
+<a href="https://github.com/folknology/BlackCrab">BlackCrab Firmware</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hardware"><a class="header" href="#hardware">Hardware</a></h1>
 <p>Setting up Ice LogicDeck - Drivers and firmware:</p>
 <ul>
@@ -347,29 +350,6 @@ class AAVController(Elaboratable):
         return m
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="audio"><a class="header" href="#audio">Audio</a></h1>
-<p>Part of the AAV Tile has a stereo jack for audio line out left and right</p>
-<h1 id="audio-waveform-generation"><a class="header" href="#audio-waveform-generation">Audio waveform generation</a></h1>
-<pre><code class="language-python">from amaranth import *
-from amaranth.build import *
-
-
-class SquareWave(Elaboratable):
-    def __init__(self):
-        self.left = Signal()
-        self.right = Signal()
-
-    def elaborate(self, platform: Platform) -&gt; Module:
-        m = Module()
-        timer = Signal(16)
-        m.d.sync += timer.eq(timer + 1)
-        m.d.comb += [
-            self.left.eq(timer[-2]),
-            self.right.eq(timer[-3])
-        ]
-
-        return m
-</code></pre>
-<p>code ported from <a href="https://github.com/lawrie/blackicemx_nmigen_examples/blob/main/audio/music4.py">Lawrie</a> in turned inspired by <a href="https://www.fpga4fun.com/MusicBox2.html">FPGA4fun</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="video"><a class="header" href="#video">Video</a></h1>
 <h2 id="how-a-vga-frame-is-divided"><a class="header" href="#how-a-vga-frame-is-divided">How a VGA frame is divided</a></h2>
 <p><img src="visual_Frame.png" alt="frame" /></p>

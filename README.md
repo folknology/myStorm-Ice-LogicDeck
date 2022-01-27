@@ -1,10 +1,10 @@
-# Ice-LogicDeck 
+# Ice LogicDeck 
 The very first myStorm [Tile](https://github.com/folknology/Tiles) based logic deck, the design is based around the combination of a powerful STM32 F7 microcontroller fused with a fully configurable Lattice Ice40Hx FPGA.
-This forms a modular heterogeneous embedded development system, it is very much WIP, I will add more documentation soon, you can follow the recordings of my [streams](https://www.youtube.com/channel/UCQSPg8L4WFBGuj_MnvQQ7Qw/videos) that narrate it's development and perhaps peruses the [documentation](https://folknology.github.io/myStorm-Ice-LogicDeck/) as we develop it.
+This forms a modular heterogeneous embedded development system, it is very much WIP, I will add more documentation soon, you can follow the [live](https://www.twitch.tv/folknology) streaming [narrative](https://www.youtube.com/playlist?list=PLXS9jyX9czzqn4HU2mEmoEFxpgIv1Dvy7) as we develop it, you can follow the evolving [documentation](https://folknology.github.io/myStorm-Ice-LogicDeck/).
 
 ## The 'Deck' based solution is formed by combining multiple [Tiles](https://github.com/folknology/Tiles) and the Ice Logic board carrier
 ![LogicDeck Layout](docs/ILD-Proto-B-UnLoaded.jpg)
-## Together these form the Ice LogicDeck solution
+## Together these form an Ice LogicDeck solution
 ![LogicDeck Layout](docs/ILD-Proto-B-Loaded.jpg)
 
 ### Hardware, development, tooling and software
