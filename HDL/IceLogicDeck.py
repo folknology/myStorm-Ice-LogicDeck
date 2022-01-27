@@ -75,13 +75,12 @@ class IceLogicDeckPlatform(LatticeICE40Platform):
     ]
 
     def toolchain_program(self, products, name, **kwargs):
-        device = os.environ.get("DEVICE", "/dev/ttyS6")
+        device = os.environ.get("DEVICE", "/dev/ttyACM1")
         print("Programming ", device)
         with products.extract("{}.bin".format(name)) as bitstream_filename:
             subprocess.check_call(["cp", bitstream_filename, device])
 
 
 if __name__ == "__main__":
-    #from .test.blinky import *
     from amaranth_boards.test.blinky import *
     IceLogicDeckPlatform().build(Blinky(), do_program=True)

@@ -9,6 +9,7 @@ leds12_tile = [
             Subsignal("leds", Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir="o", conn=("tile", 3)), Attrs(IO_STANDARD="SB_LVCMOS")))
 ]
 
+
 class LEDTileTest(Elaboratable):
     def elaborate(self, platform):
 
@@ -19,6 +20,7 @@ class LEDTileTest(Elaboratable):
         m.d.sync += timer.eq(timer + 1)
         m.d.comb += leds12.eq(timer[-15:-1])
         return m
+
 
 class QSPIE2LedTest(Elaboratable):
     def elaborate(self, platform):
@@ -41,4 +43,4 @@ if __name__ == "__main__":
     platform = IceLogicDeckPlatform()
     platform.add_resources(leds12_tile)
     # platform.build(LEDTileTest(), do_program=True)
-    platform.build(QSPIE2LedTest(), do_program=True)
+    platform.build(LEDTileTest(), do_program=True)
