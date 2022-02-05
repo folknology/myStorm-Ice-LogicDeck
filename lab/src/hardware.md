@@ -8,7 +8,7 @@ There is a second Usb-C (Usb-PD) Connector which operates as a high Power over U
 delivery system operating from 5 to 20 volts in order to be able to power a large range of modular tiles from simple led drivers through to small motor and power-train devices. An auxiliary power supply scheme is also  provided for the more extreme power delivery requirements across the tiles.
 
 ## Operating Modes
-Mode selection is achieved via the 'Mode' button, if depressed on power up it switches the device into Usb-DFU mode which enables the firmware to be updated from the PC host. Normal startup places the device into _Development mode_. In development mode the device intelligently listens to Usb traffic for new deck application, FPGA updates whilst concurrently relaying monitor, logging and error information.
+Mode selection is achieved via the 'Mode' button, if depressed on power up it switches the device into Usb-DFU mode which enables the firmware to be updated from the PC host over Usb. Normal startup places the device into _Development mode_. In development mode the device intelligently listens to Usb traffic for new deck application, FPGA updates whilst concurrently relaying monitor, logging and error information.
 
 A third _Advanced mode_ can be entered pressing the mode button during normal operation. This mode enables additional sub-command modes including _terminal_ , _test_ and  _flash_ for making things permanent or adding ROM data etc.. one can switch back to development mode simple by pressing the mode button once more.
 
