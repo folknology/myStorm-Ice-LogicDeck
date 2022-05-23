@@ -4,7 +4,7 @@ from amaranth import *
 from amaranth.build import *
 from .vga import *
 
-PINMAP = {"hs": "3", "vs": "4", "red": "11 7 6", "green": "12 10 5", "blue": "9 8", "right": "2", "left": "1"}
+PINMAP = {"hs": "1", "vs": "2", "red": "11 7 6", "green": "12 10 5 4", "blue": "3 9 8"}
 
 
 def tile_resources(tile: int) -> List:

@@ -7,6 +7,7 @@ class SquareWave(Elaboratable):
         self.left = Signal()
         self.right = Signal()
 
+
     def elaborate(self, platform: Platform) -> Module:
         m = Module()
         timer = Signal(16)

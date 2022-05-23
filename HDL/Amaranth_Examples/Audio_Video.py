@@ -1,9 +1,10 @@
 from amaranth import *
-from IceLogicDeck import *
-from Tiles.AAVC_tile import tile_resources
-from Tiles.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
-from Tiles.pll import PLL
-from Tiles.audio import SquareWave
+
+from mystorm_boards.icelogicbus import *
+from HDL.Amaranth_Examples.Tiles.AAVC_tile import tile_resources
+from HDL.Amaranth_Examples.Tiles.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
+from HDL.Amaranth_Examples.Tiles.pll import PLL
+from HDL.Amaranth_Examples.Tiles.audio import SquareWave
 
 
 TILE = 1
@@ -50,18 +51,23 @@ class AVExample(Elaboratable):
         # Hook it up to the VGA instance
         m.d.comb += [
             av_tile.red.eq(vga.o_vga_r[5:]),
-            av_tile.green.eq(vga.o_vga_g[5:]),
-            av_tile.blue.eq(vga.o_vga_b[6:]),
+            av_tile.green.eq(vga.o_vga_g[4:]),
+            av_tile.blue.eq(vga.o_vga_b[5:]),
             av_tile.hs.eq(vga.o_vga_hsync),
-            av_tile.vs.eq(vga.o_vga_vsync),
-            av_tile.left.eq(sqw.left),
-            av_tile.right.eq(sqw.right)
+            av_tile.vs.eq(vga.o_vga_vsync)
+            # av_tile.left.eq(sqw.left),
+            # av_tile.right.eq(sqw.right)
         ]
 
         return m
 
+def synth():
+    platform = IceLogicBusPlatform()
+    platform.add_resources(tile_resources(TILE))
+    platform.build(AVExample(timing=vga_timings['1024x768@60Hz']), do_program=True)
+
 
 if __name__ == "__main__":
-    platform = IceLogicDeckPlatform()
+    platform = IceLogicBusPlatform()
     platform.add_resources(tile_resources(TILE))
     platform.build(AVExample(timing=vga_timings['1024x768@60Hz']), do_program=True)

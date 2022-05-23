@@ -3,15 +3,23 @@ from amaranth.build import *
 from amaranth.hdl.ast import Rose
 
 from mystorm_boards.icelogicbus import *
-from HDL.Amaranth_Examples.Tiles.seven_seg_tile import tile_resources
 
-
-TILE = 3
+TILE = 4
+BLADE = 1
 
 leds12_tile = [
     Resource("leds12", 0,
 
             Subsignal("leds", Pins("1 2 3 4 5 6 7 8 9 10 11 12", dir="o", conn=("tile", TILE)), Attrs(IO_STANDARD="SB_LVCMOS")))
+]
+
+led_blade = [
+    Resource("leds6", 0,
+                Subsignal("leds",
+                          Pins("1 2 3 4 5 6", dir="o", conn=("blade", BLADE)),
+                          Attrs(IO_STANDARD="SB_LVCMOS")
+                          )
+             )
 ]
 
 
@@ -26,6 +34,30 @@ class LEDTileTest(Elaboratable):
         m.d.comb += leds12.eq(timer[-15:-1])
         return m
 
+class LEDBladeTest(Elaboratable):
+    def elaborate(self, platform):
+
+        leds6 = Cat([l for l in platform.request("leds6")])
+        timer = Signal(30)
+
+        m = Module()
+        m.d.sync += timer.eq(timer + 1)
+        m.d.comb += leds6.eq(timer[-7:-1])
+        return m
+
+class LEDBladeTrail(Elaboratable):
+    def elaborate(self, platform):
+
+        leds6 = Cat([l for l in platform.request("leds6")])
+        timer = Signal(23)
+        leds6.eq(Repl(C(1, 1), 6))
+
+        m = Module()
+        m.d.sync += timer.eq(timer + 1)
+        with m.If(timer[21]):
+           m.d.sync += leds6.eq(Cat(leds6[-5:], ~leds6[0]))
+
+        return m
 
 class QSPIE2LedTestold(Elaboratable):
     def elaborate(self, platform):
@@ -85,11 +117,15 @@ class QSPIE2LedTest(Elaboratable):
 def synth():
     platform = IceLogicBusPlatform()
     platform.add_resources(leds12_tile)
+    platform.add_resources(led_blade)
     # platform.build(LEDTileTest(), do_program=True)
-    platform.build(QSPIE2LedTest(), do_program=True)
+    platform.build(LEDBladeTrail(), do_program=True)
+    # platform.build(QSPIE2LedTest(), do_program=True)
 
 if __name__ == "__main__":
     platform = IceLogicDeckPlatform()
     platform.add_resources(leds12_tile)
+    platform.add_resources(led_blade)
     # platform.build(LEDTileTest(), do_program=True)
     platform.build(LEDTileTest(), do_program=True)
+    # platform.build(LEDTileTest(), do_program=True)
