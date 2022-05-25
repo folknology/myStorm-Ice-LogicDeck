@@ -1,10 +1,10 @@
 from amaranth import *
 
 from mystorm_boards.icelogicbus import *
-from HDL.Amaranth_Examples.Tiles.AAVC_tile import tile_resources
-from HDL.Amaranth_Examples.Tiles.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
-from HDL.Amaranth_Examples.Tiles.pll import PLL
-from HDL.Amaranth_Examples.Tiles.audio import SquareWave
+from HDL.Tiles.AAVC_tile import tile_resources
+from HDL.Misc.vga import VGADriver, VGATestPattern, VGATiming, vga_timings
+from HDL.Misc.pll import PLL
+from HDL.Tiles.audio import SquareWave
 
 
 TILE = 1

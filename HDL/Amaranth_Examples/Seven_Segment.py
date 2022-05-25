@@ -1,11 +1,10 @@
 from amaranth import *
-from amaranth.build import *
 from amaranth.hdl.ast import Rose
 
 from mystorm_boards.icelogicbus import *
-from HDL.Amaranth_Examples.Tiles.seven_seg_tile import SevenSegController, tile_resources
+from HDL.Tiles.seven_seg_tile import SevenSegController, tile_resources
 
-TILE = 1
+TILE = 3
 
 class SevenSegExampleOld(Elaboratable):
     def elaborate(self, platform):

@@ -2,7 +2,7 @@ from typing import List
 
 from amaranth import *
 from amaranth.build import *
-from .vga import *
+from HDL.Misc.vga import *
 
 PINMAP = {"hs": "1", "vs": "2", "red": "11 7 6", "green": "12 10 5 4", "blue": "3 9 8"}
 

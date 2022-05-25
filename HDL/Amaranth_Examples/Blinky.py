@@ -2,7 +2,6 @@ from amaranth import *
 from mystorm_boards.icelogicbus import *
 
 
-
 class Blink(Elaboratable):
     def elaborate(self, platform):
         led = platform.request("led")

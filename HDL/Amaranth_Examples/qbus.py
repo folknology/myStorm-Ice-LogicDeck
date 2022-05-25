@@ -3,7 +3,7 @@ from amaranth.hdl.ast import Rose
 from amaranth.utils import bits_for
 
 from mystorm_boards.icelogicbus import *
-from HDL.Amaranth_Examples.Tiles.seven_seg_tile import SevenSegController, tile_resources
+from HDL.Tiles import SevenSegController, tile_resources
 
 TILE = 1
 
